@@ -584,6 +584,9 @@ html {
 .mb-10{
   margin-bottom: 2.5rem;
 }
+.mb-\[100px\]{
+  margin-bottom: 100px;
+}
 .mb-\[15px\]{
   margin-bottom: 15px;
 }
@@ -599,8 +602,17 @@ html {
 .ml-auto{
   margin-left: auto;
 }
+.mt-10{
+  margin-top: 2.5rem;
+}
+.mt-\[288px\]{
+  margin-top: 288px;
+}
 .mt-\[30px\]{
   margin-top: 30px;
+}
+.mt-\[64px\]{
+  margin-top: 64px;
 }
 .\!flex{
   display: flex !important;
@@ -616,6 +628,9 @@ html {
 }
 .h-\[28px\]{
   height: 28px;
+}
+.h-\[400px\]{
+  height: 400px;
 }
 .h-\[640px\]{
   height: 640px;
@@ -641,12 +656,18 @@ html {
 .max-w-\[583px\]{
   max-width: 583px;
 }
+.max-w-\[660px\]{
+  max-width: 660px;
+}
 .-translate-y-1\/2{
   --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .grid-cols-\[1\.5fr_1fr\]{
   grid-template-columns: 1.5fr 1fr;
@@ -681,6 +702,9 @@ html {
 .gap-\[100px\]{
   gap: 100px;
 }
+.gap-\[10px\]{
+  gap: 10px;
+}
 .gap-\[14px\]{
   gap: 14px;
 }
@@ -692,6 +716,9 @@ html {
 }
 .gap-\[45px\]{
   gap: 45px;
+}
+.gap-3{
+  gap: 0.75rem;
 }
 .overflow-hidden{
   overflow: hidden;
@@ -711,6 +738,9 @@ html {
 .border{
   border-width: 1px;
 }
+.border-\[2px\]{
+  border-width: 2px;
+}
 .border-b-\[2px\]{
   border-bottom-width: 2px;
 }
@@ -725,6 +755,10 @@ html {
 }
 .border-\[rgba\(255\2c 255\2c 255\2c 0\.2\)\]{
   border-color: rgba(255,255,255,0.2);
+}
+.border-\[\#757b6f\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(117 123 111 / var(--tw-border-opacity));
 }
 .bg-\[\#757B6F\]{
   --tw-bg-opacity: 1;
@@ -773,6 +807,10 @@ html {
 .bg-center{
   background-position: center;
 }
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .p-10{
   padding: 2.5rem;
 }
@@ -812,6 +850,9 @@ html {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.pb-10{
+  padding-bottom: 2.5rem;
+}
 .pb-\[100px\]{
   padding-bottom: 100px;
 }
@@ -821,14 +862,29 @@ html {
 .pb-\[38px\]{
   padding-bottom: 38px;
 }
+.pb-\[60px\]{
+  padding-bottom: 60px;
+}
 .pl-0{
   padding-left: 0px;
+}
+.pl-\[70px\]{
+  padding-left: 70px;
+}
+.pr-5{
+  padding-right: 1.25rem;
 }
 .pr-\[100px\]{
   padding-right: 100px;
 }
 .pr-\[183px\]{
   padding-right: 183px;
+}
+.pt-\[130px\]{
+  padding-top: 130px;
+}
+.pt-\[170px\]{
+  padding-top: 170px;
 }
 .text-center{
   text-align: center;
@@ -848,6 +904,12 @@ html {
 .text-\[26px\]{
   font-size: 26px;
 }
+.text-\[30px\]{
+  font-size: 30px;
+}
+.text-\[31px\]{
+  font-size: 31px;
+}
 .text-\[35px\]{
   font-size: 35px;
 }
@@ -856,6 +918,9 @@ html {
 }
 .text-\[38px\]{
   font-size: 38px;
+}
+.text-\[18px\]{
+  font-size: 18px;
 }
 .font-bold{
   font-weight: 700;
@@ -875,6 +940,10 @@ html {
 .text-\[\#272727\]{
   --tw-text-opacity: 1;
   color: rgb(39 39 39 / var(--tw-text-opacity));
+}
+.text-\[\#757b6f\]{
+  --tw-text-opacity: 1;
+  color: rgb(117 123 111 / var(--tw-text-opacity));
 }
 .text-\[\#a3a3a3\]{
   --tw-text-opacity: 1;
@@ -1033,6 +1102,21 @@ html {
   color: rgb(117 123 111 / var(--tw-text-opacity));
 }
 
+.secondary-btn{
+  border-radius: 500px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(117 123 111 / var(--tw-bg-opacity));
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .filter-blur {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
@@ -1070,6 +1154,14 @@ html {
 .placeholder\:text-white::placeholder{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.\[\&\>div\:nth-child\(2\)\]\:col-span-2>div:nth-child(2){
+  grid-column: span 2 / span 2;
+}
+
+.\[\&\>div\:nth-child\(6\)\]\:col-span-2>div:nth-child(6){
+  grid-column: span 2 / span 2;
 }
 
 .\[\&\>span\.swiper-pagination-bullet-active\]\:h-\[13px\]>span.swiper-pagination-bullet-active{

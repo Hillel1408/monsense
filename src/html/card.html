@@ -1,0 +1,94 @@
+<div class="overflow-hidden">
+  <div class="grid grid-cols-2 pb-10">
+    <img src="img/img-2.jpg" alt="" class="w-full" />
+    <div class="flex max-w-[660px] flex-col gap-10 pl-[70px] pr-5 pt-[130px]">
+      <div>
+        <p
+          class="mb-[15px] text-[20px] font-bold leading-[150%] text-[#272727]"
+        >
+          ERICA Pleasure
+        </p>
+        <p class="text-[16px] font-medium leading-[120%] text-[#272727]">
+          Вибратор с управлением через приложение
+        </p>
+      </div>
+      <span class="text-[31px] font-bold leading-[150%] text-[#272727]"
+        >2500₽</span
+      >
+      <p class="text-[16px] font-medium leading-[120%] text-[#272727]">
+        Наша ультра-увлажняющая смазка, изготовленная на основе органического
+        алоэ, обеспечивает идеальную осмоляльность тела. Имеет фиксирующую
+        насадку на 8 и 4 жидких унции. Безопасна для использования с девайсами и
+        презервативами из латекса или полиизопрена
+      </p>
+      <div class="flex gap-[15px]">
+        <button class="secondary-btn">Добавить в корзину</button>
+        <div
+          class="flex items-center gap-5 rounded-[500px] border-[2px] border-[#757b6f] px-[30px] py-[15px] text-[16px] font-medium text-[#757b6f]"
+        >
+          <button>-</button>
+          <span>2</span>
+          <button>+</button>
+        </div>
+      </div>
+      <div>
+        <p
+          class="mb-[25px] text-[20px] font-bold leading-[150%] text-[#272727]"
+        >
+          Преимущества
+        </p>
+        <ul class="flex flex-col gap-[10px]">
+          <li class="flex items-center gap-[15px]">
+            <span class="icon-11 text-[30px] text-[#757b6f]"></span
+            ><span class="text-[16px] font-medium leading-[120%] text-[#272727]"
+              >Функция нагрева</span
+            >
+          </li>
+          <li class="flex items-center gap-[15px]">
+            <span class="icon-17 text-[30px] text-[#757b6f]"></span
+            ><span class="text-[16px] font-medium leading-[120%] text-[#272727]"
+              >Безопасный силикон</span
+            >
+          </li>
+          <li class="flex items-center gap-[15px]">
+            <span class="icon-13 text-[30px] text-[#757b6f]"></span
+            ><span class="text-[16px] font-medium leading-[120%] text-[#272727]"
+              >5 скоростных режимов</span
+            >
+          </li>
+          <li class="flex items-center gap-[15px]">
+            <span class="icon-14 text-[30px] text-[#757b6f]"></span
+            ><span class="text-[16px] font-medium leading-[120%] text-[#272727]"
+              >90 минут для игры</span
+            >
+          </li>
+          <li class="flex items-center gap-[15px]">
+            <span class="icon-15 text-[30px] text-[#757b6f]"></span
+            ><span class="text-[16px] font-medium leading-[120%] text-[#272727]"
+              >Зарядка DC - USB</span
+            >
+          </li>
+          <li class="flex items-center gap-[15px]">
+            <span class="icon-16 text-[30px] text-[#757b6f]"></span
+            ><span class="text-[16px] font-medium leading-[120%] text-[#272727]"
+              >Просто очистить</span
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="_container pb-[100px]">
+    <div>
+      <h2 class="title mb-10">Рекомендуем</h2>
+      <div class="swiper-goods">
+        <div class="swiper-wrapper">
+          @@for (var i = 0; i < 10; i++) {
+          <div class="swiper-slide">@@include('./product.html')</div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+@@include('./blog.html')

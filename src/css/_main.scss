@@ -7,3 +7,6 @@
 .btn {
   @apply rounded-[500px] border-[2px] border-[#757b6f] px-[30px] py-[15px] text-[16px] font-medium leading-[120%] text-[#757b6f];
 }
+.secondary-btn {
+  @apply rounded-[500px] bg-[#757b6f] px-[30px] py-[15px] text-[16px] font-medium leading-[120%] text-white;
+}

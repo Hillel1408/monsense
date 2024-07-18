@@ -1,0 +1,21 @@
+<div class="_container pb-[60px] pt-[170px]">
+  @@include('./tabs.html')
+  <div
+    class="mt-10 grid grid-cols-3 gap-10 [&>div:nth-child(2)]:col-span-2 [&>div:nth-child(6)]:col-span-2"
+  >
+    @@for (var i = 0; i < 10; i++) { @@include('./product.html') }
+  </div>
+  <p class="mt-[64px] flex justify-center gap-[10px]">
+    <span class="text-[16px] font-medium leading-[120%] text-[#272727]"
+      >Загружаем товар</span
+    ><svg width="20" height="20">
+      <path
+        d="M10 1V4M19 10H16M10 19V16M1 10H4M3.63589 3.63603L5.75722 5.75735M16.3638 3.63603L14.2425 5.75735M16.3641 16.3639L14.2428 14.2426M3.63617 16.3639L5.75749 14.2426"
+        stroke="#272727"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  </p>
+</div>
