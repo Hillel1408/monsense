@@ -596,11 +596,17 @@ html {
 .flex{
   display: flex;
 }
+.grid{
+  display: grid;
+}
 .h-\[100vh\]{
   height: 100vh;
 }
 .h-\[28px\]{
   height: 28px;
+}
+.h-\[640px\]{
+  height: 640px;
 }
 .w-\[28px\]{
   width: 28px;
@@ -617,9 +623,15 @@ html {
 .max-w-\[210px\]{
   max-width: 210px;
 }
+.max-w-\[360px\]{
+  max-width: 360px;
+}
 .-translate-y-1\/2{
   --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .flex-col{
   flex-direction: column;
@@ -665,6 +677,12 @@ html {
 }
 .rounded-full{
   border-radius: 9999px;
+}
+.rounded-xl{
+  border-radius: 0.75rem;
+}
+.rounded-2xl{
+  border-radius: 1rem;
 }
 .border{
   border-width: 1px;
@@ -726,11 +744,20 @@ html {
 .bg-\[url\(\'\/img\/bg-2\.png\'\)\]{
   background-image: url('/img/bg-2.png');
 }
+.bg-\[url\(\'\/img\/bg-3\.jpg\'\)\]{
+  background-image: url('/img/bg-3.jpg');
+}
+.bg-\[url\(\'\/img\/bg-4\.jpg\'\)\]{
+  background-image: url('/img/bg-4.jpg');
+}
 .bg-cover{
   background-size: cover;
 }
 .bg-center{
   background-position: center;
+}
+.p-10{
+  padding: 2.5rem;
 }
 .px-\[30px\]{
   padding-left: 30px;
@@ -751,6 +778,10 @@ html {
 .py-11{
   padding-top: 2.75rem;
   padding-bottom: 2.75rem;
+}
+.py-\[100px\]{
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .pb-\[100px\]{
   padding-bottom: 100px;
