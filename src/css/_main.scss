@@ -2,4 +2,8 @@
   @apply mx-auto max-w-[1320px] px-5;
 }
 .title {
+  @apply text-[55px] font-medium leading-[150%] text-[#272727];
+}
+.btn {
+  @apply rounded-[500px] border-[2px] border-[#757b6f] px-[30px] py-[15px] text-[16px] font-medium leading-[120%] text-[#757b6f];
 }
