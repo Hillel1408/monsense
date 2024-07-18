@@ -590,6 +590,12 @@ html {
 .mb-\[25px\]{
   margin-bottom: 25px;
 }
+.mb-\[30px\]{
+  margin-bottom: 30px;
+}
+.mt-\[30px\]{
+  margin-top: 30px;
+}
 .\!flex{
   display: flex !important;
 }
@@ -633,6 +639,9 @@ html {
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
+.grid-cols-4{
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
 .flex-col{
   flex-direction: column;
 }
@@ -665,6 +674,33 @@ html {
 }
 .gap-\[30px\]{
   gap: 30px;
+}
+.gap-\[45px\]{
+  gap: 45px;
+}
+.gap-\[100px\]{
+  gap: 100px;
+}
+.gap-\[900px\]{
+  gap: 900px;
+}
+.gap-\[800px\]{
+  gap: 800px;
+}
+.gap-\[80px\]{
+  gap: 80px;
+}
+.gap-\[70px\]{
+  gap: 70px;
+}
+.gap-\[760px\]{
+  gap: 760px;
+}
+.gap-\[60px\]{
+  gap: 60px;
+}
+.gap-\[15px\]{
+  gap: 15px;
 }
 .overflow-hidden{
   overflow: hidden;
@@ -795,6 +831,9 @@ html {
 .pr-\[100px\]{
   padding-right: 100px;
 }
+.pl-0{
+  padding-left: 0px;
+}
 .text-center{
   text-align: center;
 }
@@ -812,6 +851,15 @@ html {
 }
 .text-\[36px\]{
   font-size: 36px;
+}
+.text-\[38px\]{
+  font-size: 38px;
+}
+.text-\[26px\]{
+  font-size: 26px;
+}
+.text-\[35px\]{
+  font-size: 35px;
 }
 .font-bold{
   font-weight: 700;
