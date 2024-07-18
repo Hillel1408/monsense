@@ -1,2 +1,6 @@
 @import "./tailwind";
 @import "./main";
+
+.filter-blur {
+  backdrop-filter: blur(10px);
+}
