@@ -13,7 +13,7 @@
   </head>
   <body class="min-w-[350px]">
     @@include('./html/header.html')
-    <main>@@include('./html/intro.html')</main>
+    <main>@@include('./html/intro.html')@@include('./html/goods.html')</main>
     @@include('./html/footer.html')
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
@@ -24,6 +24,13 @@
           el: ".swiper-pagination",
           clickable: true,
         },
+        breakpoints: {},
+      });
+      const swiperGoods = new Swiper(".swiper-goods", {
+        slidesPerView: 3,
+        spaceBetween: 40,
+        navigation: {},
+        pagination: {},
         breakpoints: {},
       });
     </script>
