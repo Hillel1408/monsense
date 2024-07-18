@@ -6,10 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>SOAK</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
-    <link rel="stylesheet" type="text/css" href="./css/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
   </head>
   <body class="min-w-[350px]">
-    <header class="header bg-black py-[22px]">
+    <header class="header absolute left-0 right-0 z-10 py-[22px]">
   <div class="container flex justify-between">
     <a href="#" class="icon-9 text-white"></a>
     <ul class="flex gap-10 text-white">
@@ -26,21 +29,83 @@
   </div>
 </header>
 
-    <main><div class="swiper">
+    <main><div class="swiper h-[100vh]">
   <div class="swiper-wrapper">
-    <div class="swiper-slide">1</div>
-    <div class="swiper-slide">2</div>
+    <div
+      class="swiper-slide !flex flex-col justify-end bg-[url('/img/bg-1.jpg')] bg-cover bg-center"
+    >
+      <div class="container flex flex-col items-start gap-[30px] pb-[100px]">
+        <p class="text-[36px] font-medium text-white">Незабываемые ощущения</p>
+        <p class="text-[22px] font-medium leading-[120%] text-white">
+          Самые новые товары
+        </p>
+        <button
+          class="rounded-[500px] bg-[white] px-[30px] py-[15px] text-[16px] font-medium leading-[120%] text-[#272727]"
+        >
+          Смотреть весь каталог
+        </button>
+      </div>
+    </div>
+    <div
+      class="swiper-slide !flex flex-col justify-end bg-[url('/img/bg-1.jpg')] bg-cover bg-center"
+    >
+      <div class="container flex flex-col items-start gap-[30px] pb-[100px]">
+        <p class="text-[36px] font-medium text-white">Незабываемые ощущения</p>
+        <p class="text-[22px] font-medium leading-[120%] text-white">
+          Самые новые товары
+        </p>
+        <button
+          class="rounded-[500px] bg-[white] px-[30px] py-[15px] text-[16px] font-medium leading-[120%] text-[#272727]"
+        >
+          Смотреть весь каталог
+        </button>
+      </div>
+    </div>
+    <div
+      class="swiper-slide !flex flex-col justify-end bg-[url('/img/bg-1.jpg')] bg-cover bg-center"
+    >
+      <div class="container flex flex-col items-start gap-[30px] pb-[100px]">
+        <p class="text-[36px] font-medium text-white">Незабываемые ощущения</p>
+        <p class="text-[22px] font-medium leading-[120%] text-white">
+          Самые новые товары
+        </p>
+        <button
+          class="rounded-[500px] bg-[white] px-[30px] py-[15px] text-[16px] font-medium leading-[120%] text-[#272727]"
+        >
+          Смотреть весь каталог
+        </button>
+      </div>
+    </div>
+    <div
+      class="swiper-slide !flex flex-col justify-end bg-[url('/img/bg-1.jpg')] bg-cover bg-center"
+    >
+      <div class="container flex flex-col items-start gap-[30px] pb-[100px]">
+        <p class="text-[36px] font-medium text-white">Незабываемые ощущения</p>
+        <p class="text-[22px] font-medium leading-[120%] text-white">
+          Самые новые товары
+        </p>
+        <button
+          class="rounded-[500px] bg-[white] px-[30px] py-[15px] text-[16px] font-medium leading-[120%] text-[#272727]"
+        >
+          Смотреть весь каталог
+        </button>
+      </div>
+    </div>
   </div>
+  <div
+    class="swiper-pagination !bottom-10 flex items-center justify-center gap-5 [&>span.swiper-pagination-bullet-active]:h-[13px] [&>span.swiper-pagination-bullet-active]:w-[13px] [&>span.swiper-pagination-bullet-active]:bg-white [&>span]:h-[10px] [&>span]:w-[10px] [&>span]:bg-[rgba(217,217,217,0.2)]"
+  ></div>
 </div>
 </main>
     <footer class=""></footer>
 
-    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
       const swiperIntro = new Swiper(".swiper", {
         slidesPerView: 1,
         navigation: {},
         pagination: {
+          el: ".swiper-pagination",
           clickable: true,
         },
         breakpoints: {},
