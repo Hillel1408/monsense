@@ -565,6 +565,9 @@ html {
 .left-0{
   left: 0px;
 }
+.left-10{
+  left: 2.5rem;
+}
 .left-\[120\%\]{
   left: 120%;
 }
@@ -573,9 +576,6 @@ html {
 }
 .top-1\/2{
   top: 50%;
-}
-.left-10{
-  left: 2.5rem;
 }
 .top-\[110px\]{
   top: 110px;
@@ -620,6 +620,27 @@ html {
 .mt-\[64px\]{
   margin-top: 64px;
 }
+.mt-\[100px\]{
+  margin-top: 100px;
+}
+.mb-5{
+  margin-bottom: 1.25rem;
+}
+.mb-\[10px\]{
+  margin-bottom: 10px;
+}
+.mb-\[5px\]{
+  margin-bottom: 5px;
+}
+.mb-\[300px\]{
+  margin-bottom: 300px;
+}
+.mb-\[20px\]{
+  margin-bottom: 20px;
+}
+.mb-\[260px\]{
+  margin-bottom: 260px;
+}
 .\!flex{
   display: flex !important;
 }
@@ -632,6 +653,9 @@ html {
 .h-\[100vh\]{
   height: 100vh;
 }
+.h-\[24px\]{
+  height: 24px;
+}
 .h-\[28px\]{
   height: 28px;
 }
@@ -641,8 +665,8 @@ html {
 .h-\[640px\]{
   height: 640px;
 }
-.h-\[24px\]{
-  height: 24px;
+.w-\[24px\]{
+  width: 24px;
 }
 .w-\[28px\]{
   width: 28px;
@@ -652,9 +676,6 @@ html {
 }
 .w-full{
   width: 100%;
-}
-.w-\[24px\]{
-  width: 24px;
 }
 .min-w-\[350px\]{
   min-width: 350px;
@@ -670,6 +691,9 @@ html {
 }
 .max-w-\[660px\]{
   max-width: 660px;
+}
+.max-w-\[600px\]{
+  max-width: 600px;
 }
 .flex-auto{
   flex: 1 1 auto;
@@ -735,6 +759,12 @@ html {
 .gap-\[45px\]{
   gap: 45px;
 }
+.gap-\[81px\]{
+  gap: 81px;
+}
+.gap-\[20px\]{
+  gap: 20px;
+}
 .overflow-hidden{
   overflow: hidden;
 }
@@ -759,6 +789,9 @@ html {
 .border-\[3px\]{
   border-width: 3px;
 }
+.border-b{
+  border-bottom-width: 1px;
+}
 .border-b-\[2px\]{
   border-bottom-width: 2px;
 }
@@ -771,21 +804,15 @@ html {
 .border-t-0{
   border-top-width: 0px;
 }
-.border-b{
-  border-bottom-width: 1px;
+.border-\[\#272727\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(39 39 39 / var(--tw-border-opacity));
 }
-.border-\[\#757b6f\]{
+.border-\[\#757B6F\]{
   --tw-border-opacity: 1;
   border-color: rgb(117 123 111 / var(--tw-border-opacity));
 }
-.border-\[rgba\(255\2c 255\2c 255\2c 0\.2\)\]{
-  border-color: rgba(255,255,255,0.2);
-}
-.border-white{
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-.border-\[\#757B6F\]{
+.border-\[\#757b6f\]{
   --tw-border-opacity: 1;
   border-color: rgb(117 123 111 / var(--tw-border-opacity));
 }
@@ -793,9 +820,12 @@ html {
   --tw-border-opacity: 1;
   border-color: rgb(218 179 157 / var(--tw-border-opacity));
 }
-.border-\[\#272727\]{
+.border-\[rgba\(255\2c 255\2c 255\2c 0\.2\)\]{
+  border-color: rgba(255,255,255,0.2);
+}
+.border-white{
   --tw-border-opacity: 1;
-  border-color: rgb(39 39 39 / var(--tw-border-opacity));
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 .bg-\[\#757B6F\]{
   --tw-bg-opacity: 1;
@@ -813,6 +843,10 @@ html {
   --tw-bg-opacity: 1;
   background-color: rgb(254 236 236 / var(--tw-bg-opacity));
 }
+.bg-\[\#dab39d\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(218 179 157 / var(--tw-bg-opacity));
+}
 .bg-\[rgba\(117\2c 123\2c 111\2c 0\.7\)\]{
   background-color: rgba(117,123,111,0.7);
 }
@@ -822,10 +856,6 @@ html {
 }
 .bg-transparent{
   background-color: transparent;
-}
-.bg-\[\#dab39d\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(218 179 157 / var(--tw-bg-opacity));
 }
 .bg-\[url\(\'\/img\/bg-1\.jpg\'\)\]{
   background-image: url('/img/bg-1.jpg');
@@ -841,6 +871,9 @@ html {
 }
 .bg-\[url\(\'\/img\/bg-5\.png\'\)\]{
   background-image: url('/img/bg-5.png');
+}
+.bg-\[url\(\'\/img\/bg-6\.png\'\)\]{
+  background-image: url('/img/bg-6.png');
 }
 .bg-cover{
   background-size: cover;
@@ -921,20 +954,23 @@ html {
 .pr-\[183px\]{
   padding-right: 183px;
 }
+.pr-\[62px\]{
+  padding-right: 62px;
+}
+.pt-5{
+  padding-top: 1.25rem;
+}
 .pt-\[130px\]{
   padding-top: 130px;
 }
 .pt-\[170px\]{
   padding-top: 170px;
 }
-.pl-\[62px\]{
-  padding-left: 62px;
+.pb-\[81px\]{
+  padding-bottom: 81px;
 }
-.pr-\[62px\]{
-  padding-right: 62px;
-}
-.pt-5{
-  padding-top: 1.25rem;
+.pt-\[87px\]{
+  padding-top: 87px;
 }
 .text-center{
   text-align: center;
@@ -969,6 +1005,9 @@ html {
 .text-\[38px\]{
   font-size: 38px;
 }
+.text-\[101px\]{
+  font-size: 101px;
+}
 .font-bold{
   font-weight: 700;
 }
@@ -988,6 +1027,10 @@ html {
   --tw-text-opacity: 1;
   color: rgb(39 39 39 / var(--tw-text-opacity));
 }
+.text-\[\#757B6F\]{
+  --tw-text-opacity: 1;
+  color: rgb(117 123 111 / var(--tw-text-opacity));
+}
 .text-\[\#757b6f\]{
   --tw-text-opacity: 1;
   color: rgb(117 123 111 / var(--tw-text-opacity));
@@ -995,6 +1038,9 @@ html {
 .text-\[\#a3a3a3\]{
   --tw-text-opacity: 1;
   color: rgb(163 163 163 / var(--tw-text-opacity));
+}
+.text-\[rgba\(0\2c 0\2c 0\2c 0\.4\)\]{
+  color: rgba(0,0,0,0.4);
 }
 .text-\[rgba\(255\2c 255\2c 255\2c 0\.6\)\]{
   color: rgba(255,255,255,0.6);
@@ -1005,13 +1051,6 @@ html {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-.text-\[\#757B6F\]{
-  --tw-text-opacity: 1;
-  color: rgb(117 123 111 / var(--tw-text-opacity));
-}
-.text-\[rgba\(0\2c 0\2c 0\2c 0\.4\)\]{
-  color: rgba(0,0,0,0.4);
 }
 @font-face {
   font-family: "icomoon";
