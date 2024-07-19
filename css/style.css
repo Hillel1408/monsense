@@ -920,6 +920,9 @@ html {
 .bg-\[url\(\'\/img\/bg-9\.png\'\)\]{
   background-image: url('/img/bg-9.png');
 }
+.bg-\[url\(\'\.\/img\/bg-1\.jpg\'\)\]{
+  background-image: url('./img/bg-1.jpg');
+}
 .bg-cover{
   background-size: cover;
 }
