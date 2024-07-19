@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SOAK</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="min-w-[350px]">
+    <main><div class="relative h-[100vh] bg-[url('/img/bg-1.jpg')] bg-cover bg-center">
+  <button class="absolute left-10 top-[110px]">
+    <svg width="50" height="50" fill="none">
+      <rect
+        width="50"
+        height="50"
+        rx="25"
+        transform="matrix(-1 0 0 1 50 0)"
+        fill="#757B6F"
+      />
+      <path
+        d="M28 32L21 25L28 18"
+        stroke="white"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  </button>
+</div>
+<div class="bg-[#757b6f]">
+  <div class="bg-[url('/img/bg-6.png')] bg-cover bg-center">
+    <div class="_container pb-[81px] pt-[87px]">
+      <div class="mb-[260px] flex gap-[81px] border-b border-white pb-10">
+        <a href="#" class="icon-9 text-[101px] text-white"></a>
+        <div>
+          <svg width="55" height="22" class="mb-[10px]">
+            <path
+              d="M50.2279 5.62906L54.407 2.69927L52.0925 0L46.9161 3.62557C45.7519 3.21481 44.4764 3.00524 43.0849 3.00524C41.1415 3.00524 39.3929 3.39504 37.839 4.17045C36.2852 4.94586 35.0607 6.02305 34.1655 7.40622C33.2703 8.78519 32.8204 10.3779 32.8204 12.1802C32.8204 13.9825 33.2889 15.5669 34.2212 16.9375C34.249 16.9794 34.2815 17.0213 34.314 17.0632C34.2212 17.1051 34.1191 17.1429 34.0032 17.1722C33.3863 17.3399 32.8715 17.2015 32.6766 17.1512C31.4521 16.8495 30.8677 15.6381 30.7471 15.2358C30.6451 14.8963 30.5987 14.4855 30.5987 14.4855C30.5894 14.3598 30.5801 14.2298 30.5662 14.1041V10.3654C30.5801 10.16 30.5941 9.86657 30.5801 9.5145C30.543 8.66364 30.4456 6.55117 28.7109 4.89137C26.7953 3.05973 24.1747 3.00943 23.5207 3.00943C22.6116 3.00943 21.6886 3.15194 20.7563 3.43695C19.824 3.72197 18.9845 4.20398 18.2377 4.87461C17.6579 5.39853 17.1941 6.07335 16.8369 6.90744C16.4427 5.73385 15.8026 4.82012 14.9074 4.17464C13.836 3.39923 12.5048 3.00943 10.9139 3.00943C10.1068 3.00943 9.29046 3.13936 8.46949 3.40342C7.64851 3.66748 6.90175 4.0992 6.23384 4.70276C5.71435 5.1722 5.29227 5.79252 4.96295 6.56794V3.55431H0V20.7684H5.00006V12.2808C5.00006 10.9815 5.20878 9.92525 5.62623 9.11631C6.04367 8.30737 6.58635 7.71219 7.25426 7.33496C7.92217 6.95774 8.63647 6.76912 9.39251 6.76912C10.4547 6.76912 11.2849 7.09605 11.8925 7.74572C12.5001 8.39539 12.8016 9.38456 12.8016 10.7049V20.7642H17.8017V12.2766C17.8017 10.9773 18.0104 9.92106 18.4279 9.11212C18.8453 8.30318 19.388 7.708 20.0559 7.33077C20.7238 6.95354 21.4381 6.76493 22.1941 6.76493C23.2285 6.76493 24.0495 7.09186 24.6571 7.74153C24.9957 8.10618 25.3899 8.70975 25.5662 10.7007C25.6218 11.3168 25.6636 12.1383 25.6172 13.1149C25.6033 13.5341 25.5847 13.9574 25.5708 14.3765C25.5754 14.649 25.5801 14.9172 25.5847 15.1897C25.5847 15.3867 25.645 16.0279 25.812 16.6399C25.812 16.6399 25.8816 16.9081 25.9743 17.1596C26.2897 18.0063 26.9205 18.7272 26.9205 18.7272C27.5792 19.4775 28.312 19.8631 28.7898 20.1104C30.3807 20.9319 31.9855 21.1205 33.006 21.154C33.006 21.154 33.0013 21.1457 32.9967 21.1457C33.1776 21.1582 33.3585 21.1708 33.544 21.1708C35.0468 21.1708 36.5635 20.7768 37.9133 20.0517C37.9782 20.0852 38.0431 20.1188 38.1127 20.1523C39.7778 20.9277 41.712 21.3175 43.9059 21.3175C45.7241 21.3175 47.3846 21.0367 48.8874 20.4792C50.3902 19.9218 51.6194 19.1505 52.5795 18.1698L49.9264 15.3992C48.3587 16.9962 46.443 17.7925 44.1703 17.7925C42.9319 17.7925 41.8419 17.5704 40.8957 17.1261C39.9495 16.6818 39.2027 16.0321 38.66 15.1771C38.3539 14.6951 38.1452 14.146 38.0107 13.5508H52.8439V12.0126C52.8439 10.2312 52.4264 8.67202 51.5962 7.32239C51.2066 6.69368 50.7474 6.13203 50.2186 5.63325L50.2279 5.62906ZM37.9967 10.6713C38.1034 10.1055 38.275 9.58156 38.5255 9.11631C38.9661 8.28222 39.5784 7.64513 40.3623 7.20084C41.1461 6.75655 42.0552 6.5344 43.0896 6.5344C44.1239 6.5344 44.9263 6.75236 45.6453 7.18407C46.3642 7.61998 46.9347 8.22354 47.3475 8.99895C47.6165 9.49773 47.7881 10.0636 47.8856 10.6755H37.9967V10.6713Z"
+              fill="white"
+            />
+          </svg>
+          <p class="mb-[5px] text-[20px] font-bold leading-[150%] text-white">
+            Мы делаем мир лучше
+          </p>
+          <p class="text-[16px] font-medium leading-[120%] text-white">
+            Еженедельные рассылки monsense о современной близости через
+            искусство, культуру, науку и отношения.
+          </p>
+        </div>
+      </div>
+      <div>
+        <p class="mb-[10px] text-[36px] font-medium leading-[120%] text-white">
+          Современный язык тела
+        </p>
+        <p
+          class="max-w-[600px] text-[22px] font-medium leading-[120%] text-white"
+        >
+          С другой стороны постоянное информационно- пропагандистское
+          обеспечение нашей деятельности
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bg-[#757b6f]">
+  <div class="grid grid-cols-[1fr_1fr]">
+    <div>
+      <div
+        class="bg-[url('/img/bg-7.png')] bg-cover bg-center pb-[128px] pl-[calc(100vw/2-660px)] pr-[110px] pt-20"
+      >
+        <div class="pl-5">
+          <p
+            class="mb-[25px] text-[36px] font-medium leading-[120%] text-white"
+          >
+            Современный <br />
+            язык тела
+          </p>
+          <p
+            class="border-b border-[255,255,255,0.2] pb-[25px] text-[22px] font-medium leading-[120%] text-white"
+          >
+            С другой стороны постоянное информационно- пропагандистское
+            обеспечение нашей деятельности
+          </p>
+        </div>
+      </div>
+      <div
+        class="bg-[url('/img/bg-8.png')] bg-cover bg-center pb-[128px] pl-[calc(100vw/2-660px)] pr-[110px] pt-20"
+      >
+        <div class="pl-5">
+          <p
+            class="mb-[25px] text-[36px] font-medium leading-[120%] text-white"
+          >
+            Современный <br />
+            язык тела
+          </p>
+          <p
+            class="border-b border-[255,255,255,0.2] pb-[25px] text-[22px] font-medium leading-[120%] text-white"
+          >
+            С другой стороны постоянное информационно- пропагандистское
+            обеспечение нашей деятельности
+          </p>
+        </div>
+      </div>
+      <div
+        class="bg-[url('/img/bg-9.png')] bg-cover bg-center pb-[128px] pl-[calc(100vw/2-660px)] pr-[110px] pt-20"
+      >
+        <div class="pl-5">
+          <p
+            class="mb-[25px] text-[36px] font-medium leading-[120%] text-white"
+          >
+            Современный <br />
+            язык тела
+          </p>
+          <p
+            class="border-b border-[255,255,255,0.2] pb-[25px] text-[22px] font-medium leading-[120%] text-white"
+          >
+            С другой стороны постоянное информационно- пропагандистское
+            обеспечение нашей деятельности
+          </p>
+        </div>
+      </div>
+    </div>
+    <div>
+      
+      <div class="py-[72.7px] pl-[70px] pr-[calc(100vw/2-660px)]">
+        <div class="pr-5">
+          <p class="mb-[15px] text-[20px] font-bold leading-[150%] text-white">
+            Современный язык тела
+          </p>
+          <p
+            class="border-b border-[rgba(255,255,255,0.2)] pb-[25px] text-[16px] font-medium leading-[120%] text-white"
+          >
+            С другой стороны постоянное информационно- пропагандистское
+            обеспечение нашей деятельности
+          </p>
+        </div>
+      </div>
+      
+      <div class="py-[72.7px] pl-[70px] pr-[calc(100vw/2-660px)]">
+        <div class="pr-5">
+          <p class="mb-[15px] text-[20px] font-bold leading-[150%] text-white">
+            Современный язык тела
+          </p>
+          <p
+            class="border-b border-[rgba(255,255,255,0.2)] pb-[25px] text-[16px] font-medium leading-[120%] text-white"
+          >
+            С другой стороны постоянное информационно- пропагандистское
+            обеспечение нашей деятельности
+          </p>
+        </div>
+      </div>
+      
+      <div class="py-[72.7px] pl-[70px] pr-[calc(100vw/2-660px)]">
+        <div class="pr-5">
+          <p class="mb-[15px] text-[20px] font-bold leading-[150%] text-white">
+            Современный язык тела
+          </p>
+          <p
+            class="border-b border-[rgba(255,255,255,0.2)] pb-[25px] text-[16px] font-medium leading-[120%] text-white"
+          >
+            С другой стороны постоянное информационно- пропагандистское
+            обеспечение нашей деятельности
+          </p>
+        </div>
+      </div>
+      
+      <div class="py-[72.7px] pl-[70px] pr-[calc(100vw/2-660px)]">
+        <div class="pr-5">
+          <p class="mb-[15px] text-[20px] font-bold leading-[150%] text-white">
+            Современный язык тела
+          </p>
+          <p
+            class="border-b border-[rgba(255,255,255,0.2)] pb-[25px] text-[16px] font-medium leading-[120%] text-white"
+          >
+            С другой стороны постоянное информационно- пропагандистское
+            обеспечение нашей деятельности
+          </p>
+        </div>
+      </div>
+      
+      <div class="py-[72.7px] pl-[70px] pr-[calc(100vw/2-660px)]">
+        <div class="pr-5">
+          <p class="mb-[15px] text-[20px] font-bold leading-[150%] text-white">
+            Современный язык тела
+          </p>
+          <p
+            class="border-b border-[rgba(255,255,255,0.2)] pb-[25px] text-[16px] font-medium leading-[120%] text-white"
+          >
+            С другой стороны постоянное информационно- пропагандистское
+            обеспечение нашей деятельности
+          </p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<div class="_container py-[100px]">
+  <h2 class="title mb-10">Новости</h2>
+  <div class="grid h-[640px] grid-cols-2 overflow-hidden rounded-2xl">
+    <div
+      class="flex flex-col justify-end bg-[url('/img/bg-3.jpg')] bg-cover bg-center p-10"
+    >
+      <div class="max-w-[360px]">
+        <h3 class="text-[20px] font-bold leading-[150%] text-white">
+          Новые игрушки
+        </h3>
+        <p class="text-[16px] font-medium leading-[120%] text-white">
+          Наши недорогие и простые в использовании игрушки для нее и для него
+        </p>
+      </div>
+    </div>
+    <div
+      class="flex flex-col justify-end bg-[url('/img/bg-4.jpg')] bg-cover bg-center p-10"
+    >
+      <div class="max-w-[360px]">
+        <h3 class="text-[20px] font-bold leading-[150%] text-white">
+          Новые игрушки
+        </h3>
+        <p class="text-[16px] font-medium leading-[120%] text-white">
+          Наши недорогие и простые в использовании игрушки для нее и для него
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+ <div class="bg-[#757b6f]">
+  <div class="bg-[url('/img/bg-2.png')] bg-cover bg-center">
+    <div class="_container py-11 text-center">
+      <p class="mb-[15px] text-[20px] font-bold leading-[150%] text-white">
+        Подпишитесь на рассылку
+      </p>
+      <p
+        class="mb-10 text-[16px] font-medium leading-[120%] text-[rgba(255,255,255,0.6)]"
+      >
+        Получайте все новости первым
+      </p>
+      <form action="#">
+        <div class="relative mx-auto w-[620px]">
+          <input
+            type="email"
+            placeholder="Введитe E-mail"
+            class="w-full border border-b-[2px] border-l-0 border-r-0 border-t-0 border-[rgba(255,255,255,0.2)] bg-transparent pl-0 pr-[100px] placeholder:text-[16px] placeholder:font-medium placeholder:leading-[120%] placeholder:text-white"
+          />
+          <button
+            class="absolute right-0 top-1/2 -translate-y-1/2 text-[16px] font-medium leading-[120%] text-[rgba(255,255,255,0.6)]"
+          >
+            Отправить
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="mt-[100px] overflow-hidden">
+  <div class="_container pb-[100px]">
+    <div>
+      <h2 class="title mb-10">Рекомендуем</h2>
+      <div class="swiper-goods">
+        <div class="swiper-wrapper">
+          
+          <div class="swiper-slide"><div>
+  <img
+    src="img/img-1.jpg"
+    alt=""
+    class="mb-[18px] h-[400px] w-full rounded-[15px] object-cover"
+  />
+  <div class="mb-[25px] flex justify-between gap-4">
+    <div>
+      <p class="mb-[15px] text-[20px] font-bold leading-[150%] text-[#272727]">
+        ERICA Pleasure
+      </p>
+      <p
+        class="max-w-[210px] text-[16px] font-medium leading-[120%] text-[rgba(39,39,39,0.6)]"
+      >
+        Вибратор с управлением через приложение
+      </p>
+    </div>
+    <div>
+      <ul class="flex items-center gap-[14px]">
+        <li class="h-[28px] w-[28px] rounded-full bg-[#757B6F]"></li>
+        <li class="h-[28px] w-[28px] rounded-full bg-[#E2B19A]"></li>
+        <li class="h-[28px] w-[28px] rounded-full bg-[#FEECEC]"></li>
+        <li class="text-[20px] font-bold leading-[150%] text-[#272727]">+3</li>
+      </ul>
+    </div>
+  </div>
+  <p class="text-[25px] font-bold leading-[150%] text-[#272727]">2 500₽</p>
+</div>
+</div>
+          
+          <div class="swiper-slide"><div>
+  <img
+    src="img/img-1.jpg"
+    alt=""
+    class="mb-[18px] h-[400px] w-full rounded-[15px] object-cover"
+  />
+  <div class="mb-[25px] flex justify-between gap-4">
+    <div>
+      <p class="mb-[15px] text-[20px] font-bold leading-[150%] text-[#272727]">
+        ERICA Pleasure
+      </p>
+      <p
+        class="max-w-[210px] text-[16px] font-medium leading-[120%] text-[rgba(39,39,39,0.6)]"
+      >
+        Вибратор с управлением через приложение
+      </p>
+    </div>
+    <div>
+      <ul class="flex items-center gap-[14px]">
+        <li class="h-[28px] w-[28px] rounded-full bg-[#757B6F]"></li>
+        <li class="h-[28px] w-[28px] rounded-full bg-[#E2B19A]"></li>
+        <li class="h-[28px] w-[28px] rounded-full bg-[#FEECEC]"></li>
+        <li class="text-[20px] font-bold leading-[150%] text-[#272727]">+3</li>
+      </ul>
+    </div>
+  </div>
+  <p class="text-[25px] font-bold leading-[150%] text-[#272727]">2 500₽</p>
+</div>
+</div>
+          
+          <div class="swiper-slide"><div>
+  <img
+    src="img/img-1.jpg"
+    alt=""
+    class="mb-[18px] h-[400px] w-full rounded-[15px] object-cover"
+  />
+  <div class="mb-[25px] flex justify-between gap-4">
+    <div>
+      <p class="mb-[15px] text-[20px] font-bold leading-[150%] text-[#272727]">
+        ERICA Pleasure
+      </p>
+      <p
+        class="max-w-[210px] text-[16px] font-medium leading-[120%] text-[rgba(39,39,39,0.6)]"
+      >
+        Вибратор с управлением через приложение
+      </p>
+    </div>
+    <div>
+      <ul class="flex items-center gap-[14px]">
+        <li class="h-[28px] w-[28px] rounded-full bg-[#757B6F]"></li>
+        <li class="h-[28px] w-[28px] rounded-full bg-[#E2B19A]"></li>
+        <li class="h-[28px] w-[28px] rounded-full bg-[#FEECEC]"></li>
+        <li class="text-[20px] font-bold leading-[150%] text-[#272727]">+3</li>
+      </ul>
+    </div>
+  </div>
+  <p class="text-[25px] font-bold leading-[150%] text-[#272727]">2 500₽</p>
+</div>
+</div>
+          
+          <div class="swiper-slide"><div>
+  <img
+    src="img/img-1.jpg"
+    alt=""
+    class="mb-[18px] h-[400px] w-full rounded-[15px] object-cover"
+  />
+  <div class="mb-[25px] flex justify-between gap-4">
+    <div>
+      <p class="mb-[15px] text-[20px] font-bold leading-[150%] text-[#272727]">
+        ERICA Pleasure
+      </p>
+      <p
+        class="max-w-[210px] text-[16px] font-medium leading-[120%] text-[rgba(39,39,39,0.6)]"
+      >
+        Вибратор с управлением через приложение
+      </p>
+    </div>
+    <div>
+      <ul class="flex items-center gap-[14px]">
+        <li class="h-[28px] w-[28px] rounded-full bg-[#757B6F]"></li>
+        <li class="h-[28px] w-[28px] rounded-full bg-[#E2B19A]"></li>
+        <li class="h-[28px] w-[28px] rounded-full bg-[#FEECEC]"></li>
+        <li class="text-[20px] font-bold leading-[150%] text-[#272727]">+3</li>
+      </ul>
+    </div>
+  </div>
+  <p class="text-[25px] font-bold leading-[150%] text-[#272727]">2 500₽</p>
+</div>
+</div>
+          
+          <div class="swiper-slide"><div>
+  <img
+    src="img/img-1.jpg"
+    alt=""
+    class="mb-[18px] h-[400px] w-full rounded-[15px] object-cover"
+  />
+  <div class="mb-[25px] flex justify-between gap-4">
+    <div>
+      <p class="mb-[15px] text-[20px] font-bold leading-[150%] text-[#272727]">
+        ERICA Pleasure
+      </p>
+      <p
+        class="max-w-[210px] text-[16px] font-medium leading-[120%] text-[rgba(39,39,39,0.6)]"
+      >
+        Вибратор с управлением через приложение
+      </p>
+    </div>
+    <div>
+      <ul class="flex items-center gap-[14px]">
+        <li class="h-[28px] w-[28px] rounded-full bg-[#757B6F]"></li>
+        <li class="h-[28px] w-[28px] rounded-full bg-[#E2B19A]"></li>
+        <li class="h-[28px] w-[28px] rounded-full bg-[#FEECEC]"></li>
+        <li class="text-[20px] font-bold leading-[150%] text-[#272727]">+3</li>
+      </ul>
+    </div>
+  </div>
+  <p class="text-[25px] font-bold leading-[150%] text-[#272727]">2 500₽</p>
+</div>
+</div>
+          
+          <div class="swiper-slide"><div>
+  <img
+    src="img/img-1.jpg"
+    alt=""
+    class="mb-[18px] h-[400px] w-full rounded-[15px] object-cover"
+  />
+  <div class="mb-[25px] flex justify-between gap-4">
+    <div>
+      <p class="mb-[15px] text-[20px] font-bold leading-[150%] text-[#272727]">
+        ERICA Pleasure
+      </p>
+      <p
+        class="max-w-[210px] text-[16px] font-medium leading-[120%] text-[rgba(39,39,39,0.6)]"
+      >
+        Вибратор с управлением через приложение
+      </p>
+    </div>
+    <div>
+      <ul class="flex items-center gap-[14px]">
+        <li class="h-[28px] w-[28px] rounded-full bg-[#757B6F]"></li>
+        <li class="h-[28px] w-[28px] rounded-full bg-[#E2B19A]"></li>
+        <li class="h-[28px] w-[28px] rounded-full bg-[#FEECEC]"></li>
+        <li class="text-[20px] font-bold leading-[150%] text-[#272727]">+3</li>
+      </ul>
+    </div>
+  </div>
+  <p class="text-[25px] font-bold leading-[150%] text-[#272727]">2 500₽</p>
+</div>
+</div>
+          
+          <div class="swiper-slide"><div>
+  <img
+    src="img/img-1.jpg"
+    alt=""
+    class="mb-[18px] h-[400px] w-full rounded-[15px] object-cover"
+  />
+  <div class="mb-[25px] flex justify-between gap-4">
+    <div>
+      <p class="mb-[15px] text-[20px] font-bold leading-[150%] text-[#272727]">
+        ERICA Pleasure
+      </p>
+      <p
+        class="max-w-[210px] text-[16px] font-medium leading-[120%] text-[rgba(39,39,39,0.6)]"
+      >
+        Вибратор с управлением через приложение
+      </p>
+    </div>
+    <div>
+      <ul class="flex items-center gap-[14px]">
+        <li class="h-[28px] w-[28px] rounded-full bg-[#757B6F]"></li>
+        <li class="h-[28px] w-[28px] rounded-full bg-[#E2B19A]"></li>
+        <li class="h-[28px] w-[28px] rounded-full bg-[#FEECEC]"></li>
+        <li class="text-[20px] font-bold leading-[150%] text-[#272727]">+3</li>
+      </ul>
+    </div>
+  </div>
+  <p class="text-[25px] font-bold leading-[150%] text-[#272727]">2 500₽</p>
+</div>
+</div>
+          
+          <div class="swiper-slide"><div>
+  <img
+    src="img/img-1.jpg"
+    alt=""
+    class="mb-[18px] h-[400px] w-full rounded-[15px] object-cover"
+  />
+  <div class="mb-[25px] flex justify-between gap-4">
+    <div>
+      <p class="mb-[15px] text-[20px] font-bold leading-[150%] text-[#272727]">
+        ERICA Pleasure
+      </p>
+      <p
+        class="max-w-[210px] text-[16px] font-medium leading-[120%] text-[rgba(39,39,39,0.6)]"
+      >
+        Вибратор с управлением через приложение
+      </p>
+    </div>
+    <div>
+      <ul class="flex items-center gap-[14px]">
+        <li class="h-[28px] w-[28px] rounded-full bg-[#757B6F]"></li>
+        <li class="h-[28px] w-[28px] rounded-full bg-[#E2B19A]"></li>
+        <li class="h-[28px] w-[28px] rounded-full bg-[#FEECEC]"></li>
+        <li class="text-[20px] font-bold leading-[150%] text-[#272727]">+3</li>
+      </ul>
+    </div>
+  </div>
+  <p class="text-[25px] font-bold leading-[150%] text-[#272727]">2 500₽</p>
+</div>
+</div>
+          
+          <div class="swiper-slide"><div>
+  <img
+    src="img/img-1.jpg"
+    alt=""
+    class="mb-[18px] h-[400px] w-full rounded-[15px] object-cover"
+  />
+  <div class="mb-[25px] flex justify-between gap-4">
+    <div>
+      <p class="mb-[15px] text-[20px] font-bold leading-[150%] text-[#272727]">
+        ERICA Pleasure
+      </p>
+      <p
+        class="max-w-[210px] text-[16px] font-medium leading-[120%] text-[rgba(39,39,39,0.6)]"
+      >
+        Вибратор с управлением через приложение
+      </p>
+    </div>
+    <div>
+      <ul class="flex items-center gap-[14px]">
+        <li class="h-[28px] w-[28px] rounded-full bg-[#757B6F]"></li>
+        <li class="h-[28px] w-[28px] rounded-full bg-[#E2B19A]"></li>
+        <li class="h-[28px] w-[28px] rounded-full bg-[#FEECEC]"></li>
+        <li class="text-[20px] font-bold leading-[150%] text-[#272727]">+3</li>
+      </ul>
+    </div>
+  </div>
+  <p class="text-[25px] font-bold leading-[150%] text-[#272727]">2 500₽</p>
+</div>
+</div>
+          
+          <div class="swiper-slide"><div>
+  <img
+    src="img/img-1.jpg"
+    alt=""
+    class="mb-[18px] h-[400px] w-full rounded-[15px] object-cover"
+  />
+  <div class="mb-[25px] flex justify-between gap-4">
+    <div>
+      <p class="mb-[15px] text-[20px] font-bold leading-[150%] text-[#272727]">
+        ERICA Pleasure
+      </p>
+      <p
+        class="max-w-[210px] text-[16px] font-medium leading-[120%] text-[rgba(39,39,39,0.6)]"
+      >
+        Вибратор с управлением через приложение
+      </p>
+    </div>
+    <div>
+      <ul class="flex items-center gap-[14px]">
+        <li class="h-[28px] w-[28px] rounded-full bg-[#757B6F]"></li>
+        <li class="h-[28px] w-[28px] rounded-full bg-[#E2B19A]"></li>
+        <li class="h-[28px] w-[28px] rounded-full bg-[#FEECEC]"></li>
+        <li class="text-[20px] font-bold leading-[150%] text-[#272727]">+3</li>
+      </ul>
+    </div>
+  </div>
+  <p class="text-[25px] font-bold leading-[150%] text-[#272727]">2 500₽</p>
+</div>
+</div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+    <footer class="bg-[#757b6f] py-[60px]">
+  <div class="_container flex justify-between gap-[100px]">
+    <div class="flex flex-col gap-[45px]">
+      <a href="#" class="icon-9 text-[38px] text-white"></a>
+      <div>
+        <p class="text-[20px] font-bold leading-[150%] text-white">
+          Подпишитесь на рассылку
+        </p>
+        <p class="text-[16px] font-medium leading-[120%] text-white">
+          Получайте все новости первым
+        </p>
+      </div>
+      <form action="#">
+        <div class="relative">
+          <input
+            type="email"
+            placeholder="Введитe E-mail"
+            class="w-full border border-b-[2px] border-l-0 border-r-0 border-t-0 border-[rgba(255,255,255,0.2)] bg-transparent pl-0 pr-[100px] placeholder:text-[16px] placeholder:font-medium placeholder:leading-[120%] placeholder:text-white"
+          />
+          <button
+            class="absolute right-0 top-1/2 -translate-y-1/2 text-[16px] font-medium leading-[120%] text-[rgba(255,255,255,0.6)]"
+          >
+            Отправить
+          </button>
+        </div>
+      </form>
+    </div>
+    <div>
+      <h3 class="mb-[30px] text-[36px] font-medium text-white">Навигация</h3>
+      <ul
+        class="flex flex-col gap-5 text-[16px] font-medium leading-[120%] text-white"
+      >
+        <li><a href="#">Глвная</a></li>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Блог</a></li>
+        <li><a href="#">Контакты</a></li>
+        <li><a href="#">Программа лояльности</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="mb-[30px] text-[36px] font-medium text-white">Где купить</h3>
+      <ul
+        class="flex flex-col gap-5 text-[16px] font-medium leading-[120%] text-white"
+      >
+        <li><a href="#">Карта магазинов</a></li>
+        <li><a href="#">Стать партнером</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="mb-[30px] text-[36px] font-medium text-white">Контакты</h3>
+      <p class="mb-[15px] text-[16px] font-medium leading-[120%] text-white">
+        Красная пл., Москва, 109012
+      </p>
+      <a
+        class="text-[16px] font-medium leading-[120%] text-white"
+        href="tel:+7(777)777-77-77"
+        >+7 (777) 777-77-77</a
+      >
+      <ul class="mt-[30px] flex gap-[15px]">
+        <li><a href="#" class="icon-youtube text-[35px] text-white"></a></li>
+        <li><a href="#" class="icon-instagram text-[35px] text-white"></a></li>
+        <li><a href="#" class="icon-telegram text-[35px] text-white"></a></li>
+        <li><a href="#" class="icon-whatsapp text-[35px] text-white"></a></li>
+        <li>
+          <a href="#" class=""
+            ><svg width="35" height="35">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0 5.46875C0 2.44844 2.44844 0 5.46875 0H29.5312C32.5516 0 35 2.44844 35 5.46875V29.5312C35 32.5516 32.5516 35 29.5312 35H5.46875C2.44844 35 0 32.5516 0 29.5312V5.46875ZM9.975 9.975C8.75 11.2117 8.75 13.1892 8.75 17.15V17.85C8.75 21.805 8.75 23.7825 9.975 25.025C11.2117 26.25 13.1892 26.25 17.15 26.25H17.85C21.805 26.25 23.7825 26.25 25.025 25.025C26.25 23.7883 26.25 21.8108 26.25 17.85V17.15C26.25 13.195 26.25 11.2175 25.025 9.975C23.7883 8.75 21.8108 8.75 17.85 8.75H17.15C13.195 8.75 11.2175 8.75 9.975 9.975Z"
+                fill="white"
+              />
+              <path
+                d="M18.06 21.3558C14.07 21.3558 11.795 18.6258 11.7017 14.0758H13.7083C13.7725 17.4125 15.2425 18.8241 16.4092 19.1158V14.0758H18.2933V16.9516C19.4425 16.8291 20.6558 15.5166 21.0642 14.07H22.9425C22.7893 14.8188 22.4834 15.5281 22.0438 16.1534C21.6042 16.7787 21.0403 17.3066 20.3875 17.7041C21.116 18.0668 21.7594 18.5797 22.2753 19.2091C22.7911 19.8386 23.1676 20.5702 23.38 21.3558H21.3092C20.8658 19.9733 19.7575 18.9 18.2933 18.7541V21.3558H18.06Z"
+                fill="white"
+              /></svg
+          ></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="_container mt-[288px]">
+    <ul
+      class="flex gap-[100px] text-[20px] font-bold leading-[150%] text-white"
+    >
+      <li>
+        <a href="#">Стать партнером</a>
+      </li>
+      <li>
+        <a href="#">Политика конфиденциальности</a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      const swiperGoods = new Swiper(".swiper-goods", {
+        slidesPerView: 3,
+        spaceBetween: 40,
+        navigation: {},
+        pagination: {},
+        breakpoints: {},
+      });
+    </script>
+  </body>
+</html>
