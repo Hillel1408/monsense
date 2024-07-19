@@ -926,6 +926,33 @@ html {
 .bg-\[url\(\'img\/bg-1\.jpg\'\)\]{
   background-image: url('img/bg-1.jpg');
 }
+.bg-\[url\(\'https\:\/\/hillel1408\.github\.io\/monsense\/img\/bg-1\.jpg\'\)\]{
+  background-image: url('https://hillel1408.github.io/monsense/img/bg-1.jpg');
+}
+.bg-\[url\(\'https\:\/\/hillel1408\.github\.io\/monsense\/img\/bg-6\.png\'\)\]{
+  background-image: url('https://hillel1408.github.io/monsense/img/bg-6.png');
+}
+.bg-\[url\(\'https\:\/\/hillel1408\.github\.io\/monsense\/img\/bg-7\.png\'\)\]{
+  background-image: url('https://hillel1408.github.io/monsense/img/bg-7.png');
+}
+.bg-\[url\(\'https\:\/\/hillel1408\.github\.io\/monsense\/img\/bg-8\.png\'\)\]{
+  background-image: url('https://hillel1408.github.io/monsense/img/bg-8.png');
+}
+.bg-\[url\(\'https\:\/\/hillel1408\.github\.io\/monsense\/img\/bg-9\.png\'\)\]{
+  background-image: url('https://hillel1408.github.io/monsense/img/bg-9.png');
+}
+.bg-\[url\(\'https\:\/\/hillel1408\.github\.io\/monsense\/img\/bg-5\.png\'\)\]{
+  background-image: url('https://hillel1408.github.io/monsense/img/bg-5.png');
+}
+.bg-\[url\(\'https\:\/\/hillel1408\.github\.io\/monsense\/img\/bg-3\.jpg\'\)\]{
+  background-image: url('https://hillel1408.github.io/monsense/img/bg-3.jpg');
+}
+.bg-\[url\(\'https\:\/\/hillel1408\.github\.io\/monsense\/img\/bg-4\.jpg\'\)\]{
+  background-image: url('https://hillel1408.github.io/monsense/img/bg-4.jpg');
+}
+.bg-\[url\(\'https\:\/\/hillel1408\.github\.io\/monsense\/img\/bg-2\.png\'\)\]{
+  background-image: url('https://hillel1408.github.io/monsense/img/bg-2.png');
+}
 .bg-cover{
   background-size: cover;
 }
