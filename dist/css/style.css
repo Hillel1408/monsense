@@ -692,6 +692,9 @@ html {
 .w-full{
   width: 100%;
 }
+.w-\[260px\]{
+  width: 260px;
+}
 .min-w-\[350px\]{
   min-width: 350px;
 }
