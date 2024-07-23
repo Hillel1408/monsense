@@ -533,6 +533,9 @@ html {
 .mt-\[72px\]{
   margin-top: 72px;
 }
+.mb-\[54px\]{
+  margin-bottom: 54px;
+}
 .\!flex{
   display: flex !important;
 }
@@ -563,8 +566,14 @@ html {
 .h-full{
   height: 100%;
 }
+.h-\[409px\]{
+  height: 409px;
+}
 .max-h-\[300px\]{
   max-height: 300px;
+}
+.max-h-\[342px\]{
+  max-height: 342px;
 }
 .w-\[100px\]{
   width: 100px;
@@ -583,6 +592,12 @@ html {
 }
 .w-full{
   width: 100%;
+}
+.w-\[400px\]{
+  width: 400px;
+}
+.w-\[220px\]{
+  width: 220px;
 }
 .min-w-\[350px\]{
   min-width: 350px;
@@ -610,6 +625,9 @@ html {
 }
 .max-w-\[700px\]{
   max-width: 700px;
+}
+.max-w-\[400px\]{
+  max-width: 400px;
 }
 .flex-auto{
   flex: 1 1 auto;
@@ -644,6 +662,15 @@ html {
 }
 .grid-cols-\[36px_36px_36px_36px\]{
   grid-template-columns: 36px 36px 36px 36px;
+}
+.grid-cols-\[510px_1fr\]{
+  grid-template-columns: 510px 1fr;
+}
+.grid-cols-\[180px_1fr\]{
+  grid-template-columns: 180px 1fr;
+}
+.grid-cols-\[550px_1fr\]{
+  grid-template-columns: 550px 1fr;
 }
 .flex-col{
   flex-direction: column;
@@ -704,6 +731,21 @@ html {
 }
 .gap-\[88px\]{
   gap: 88px;
+}
+.gap-\[60px\]{
+  gap: 60px;
+}
+.gap-\[25px\]{
+  gap: 25px;
+}
+.gap-\[20px\]{
+  gap: 20px;
+}
+.gap-\[50px\]{
+  gap: 50px;
+}
+.gap-\[40px\]{
+  gap: 40px;
 }
 .overflow-hidden{
   overflow: hidden;
@@ -807,6 +849,12 @@ html {
 .bg-transparent{
   background-color: transparent;
 }
+.bg-\[img\/bg-12\.png\]{
+  background-color: img/bg-12.png;
+}
+.bg-\[\'img\/bg-12\.png\'\]{
+  background-color: 'img/bg-12.png';
+}
 .bg-\[url\(\'\/img\/bg-11\.png\'\)\]{
   background-image: url('/img/bg-11.png');
 }
@@ -837,6 +885,12 @@ html {
 .bg-\[url\(\'https\:\/\/hillel1408\.github\.io\/monsense\/img\/bg-9\.png\'\)\]{
   background-image: url('https://hillel1408.github.io/monsense/img/bg-9.png');
 }
+.bg-\[url\(\'img\/bg-12\.png\'\)\]{
+  background-image: url('img/bg-12.png');
+}
+.bg-\[url\(\'\/img\/bg-12\.png\'\)\]{
+  background-image: url('/img/bg-12.png');
+}
 .bg-cover{
   background-size: cover;
 }
@@ -855,6 +909,15 @@ html {
 }
 .p-5{
   padding: 1.25rem;
+}
+.p-11{
+  padding: 2.75rem;
+}
+.p-\[46px\]{
+  padding: 46px;
+}
+.p-8{
+  padding: 2rem;
 }
 .px-3{
   padding-left: 0.75rem;
@@ -1032,6 +1095,9 @@ html {
 }
 .text-\[55px\]{
   font-size: 55px;
+}
+.text-\[19px\]{
+  font-size: 19px;
 }
 .font-bold{
   font-weight: 700;
