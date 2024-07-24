@@ -23,6 +23,13 @@ module.exports = {
     extend: {
       colors: {},
     },
+    screens: {
+      "2xl": { max: "1700px" },
+      xl: { max: "1365px" },
+      lg: { max: "1023px" },
+      md: { max: "767px" },
+      sm: { max: "479px" },
+    },
   },
   plugins: [
     plugin(({ addBase, theme }) => {

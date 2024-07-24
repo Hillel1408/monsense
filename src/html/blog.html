@@ -1,13 +1,17 @@
-<div class="mb-[100px]">
-  <div class="_container mb-10 flex items-center justify-between">
+<div class="mb-[100px] sm:mb-10">
+  <div class="_container mb-10 flex items-center justify-between sm:mb-5">
     <h2 class="title">Блог</h2>
     <button class="btn">Смотреть все</button>
   </div>
   <div
-    class="bg-[url('https://hillel1408.github.io/monsense/img/bg-5.png')] bg-cover bg-center"
+    class="bg-[url('https://hillel1408.github.io/monsense/img/bg-5.png')] bg-cover bg-center md:py-5"
   >
-    <div class="_container grid grid-cols-[1.5fr_1fr]">
-      <div class="flex flex-col justify-end pb-[38px] pr-[183px]">
+    <div
+      class="_container grid grid-cols-[1.5fr_1fr] lg:grid-cols-[1fr_360px] md:grid-cols-[1fr]"
+    >
+      <div
+        class="flex flex-col justify-end pb-[38px] pr-[183px] lg:pr-5 md:hidden"
+      >
         <div class="ml-auto max-w-[583px]">
           <p
             class="mb-[25px] text-[36px] font-medium leading-[110%] text-white"
@@ -21,46 +25,33 @@
           </p>
         </div>
       </div>
-      <div class="py filter-blur bg-[rgba(117,123,111,0.7)] px-[66px] py-5">
-        <div class="py-[40px]">
-          <div class="border-b-[2px] border-[rgba(255,255,255,0.2)] pb-[25px]">
+      <div
+        class="py filter-blur bg-[rgba(117,123,111,0.7)] px-[66px] py-5 lg:p-[15px] sm:h-[280px] md:[&>div:not(:first-child)]:hidden"
+      >
+        @@for (var i = 0; i < 3; i++) {
+        <div class="py-[40px] md:py-0 sm:h-full">
+          <div
+            class="border-b-[2px] border-[rgba(255,255,255,0.2)] pb-[25px] sm:flex sm:h-full sm:flex-col sm:items-start sm:justify-between sm:border-0 sm:pb-0"
+          >
             <p
-              class="mb-[15px] text-[20px] font-bold leading-[150%] text-white"
+              class="mb-[15px] text-[20px] font-bold leading-[150%] text-white sm:mb-0 sm:text-[24px] sm:font-medium sm:leading-[100%]"
             >
               Современный язык тела
             </p>
-            <p class="left-[120%] text-[16px] font-medium text-white">
-              С другой стороны постоянное информационно- пропагандистское
-              обеспечение нашей деятельности
-            </p>
-          </div>
-        </div>
-        <div class="py-[40px]">
-          <div class="border-b-[2px] border-[rgba(255,255,255,0.2)] pb-[25px]">
             <p
-              class="mb-[15px] text-[20px] font-bold leading-[150%] text-white"
+              class="text-[16px] font-medium leading-[120%] text-white sm:text-[12px]"
             >
-              Современный язык тела
-            </p>
-            <p class="left-[120%] text-[16px] font-medium text-white">
               С другой стороны постоянное информационно- пропагандистское
               обеспечение нашей деятельности
             </p>
-          </div>
-        </div>
-        <div class="py-[40px]">
-          <div class="border-b-[2px] border-[rgba(255,255,255,0.2)] pb-[25px]">
-            <p
-              class="mb-[15px] text-[20px] font-bold leading-[150%] text-white"
+            <button
+              class="rounded-[500px] bg-[white] px-[30px] py-[15px] text-[16px] font-medium leading-[120%] text-[#272727] sm:px-[15px] sm:py-3 sm:text-[12px]"
             >
-              Современный язык тела
-            </p>
-            <p class="left-[120%] text-[16px] font-medium text-white">
-              С другой стороны постоянное информационно- пропагандистское
-              обеспечение нашей деятельности
-            </p>
+              Читать статью
+            </button>
           </div>
         </div>
+        }
       </div>
     </div>
   </div>

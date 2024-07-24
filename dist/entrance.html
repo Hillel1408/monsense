@@ -17,19 +17,22 @@
     </style>
   </head>
   <body class="min-w-[350px]">
-    <header class="header absolute left-0 right-0 z-10 py-[22px]">
-  <div class="_container flex justify-between">
-    <a href="#" class="icon-9 text-[26px] text-white"></a>
-    <ul class="flex items-center gap-10 text-white">
+    <header
+  class="header absolute left-0 right-0 z-10 min-w-[320px] py-[22px] sm:py-[17px]"
+>
+  <div class="_container flex items-center justify-between">
+    <img src="/img/icon-1.svg" alt="" class="hidden sm:block" />
+    <a href="#" class="icon-9 text-[26px] text-white sm:text-[16px]"></a>
+    <ul class="flex items-center gap-10 text-white md:hidden">
       <li><a href="#">Каталог</a></li>
       <li><a href="#">Блог</a></li>
       <li><a href="#">Где купить</a></li>
     </ul>
     <ul class="flex items-center gap-[30px]">
-      <li class="icon-6 text-[26px] text-white"></li>
-      <li class="icon--12 text-[26px] text-white"></li>
-      <li class="icon-8 text-[26px] text-white"></li>
-      <li class="icon-7 text-[26px] text-white"></li>
+      <li class="icon-6 text-[26px] text-white sm:text-[22px]"></li>
+      <li class="icon--12 text-[26px] text-white sm:hidden"></li>
+      <li class="icon-8 text-[26px] text-white sm:text-[22px]"></li>
+      <li class="icon-7 text-[26px] text-white sm:hidden"></li>
     </ul>
   </div>
 </header>
@@ -41,7 +44,7 @@
     Вход
   </h1>
   <form action="#" class="mx-auto max-w-[700px]">
-    <div class="flex flex-col gap-10">
+    <div class="flex flex-col gap-5">
       <input
         type="email"
         placeholder="E-mail или телефон"
