@@ -37,110 +37,144 @@
   </div>
 </header>
 
-    <main><div class="_container relative pb-[200px] pt-[170px]">
+    <main><div class="_container relative pb-[200px] pt-[170px] sm:pb-0 sm:pt-[75px]">
   <h1
-    class="mb-[60px] text-left text-[55px] font-medium leading-[150%] text-[#272727]"
+    class="mb-[60px] text-left text-[55px] font-medium leading-[150%] text-[#272727] sm:mb-10 sm:text-[24px] sm:leading-[100%]"
   >
     Личный кабинет
   </h1>
   <div
-    class="grid grid-cols-[1fr_400px] gap-[88px] border-b-[2px] border-[rgba(0,0,0,0.2)] pb-[60px]"
+    class="grid grid-cols-[1fr_400px] gap-[88px] border-b-[2px] border-[rgba(0,0,0,0.2)] pb-[60px] xl:gap-10 lg:grid-cols-[1fr] sm:border-0 sm:pb-10"
   >
     <div>
-      <div class="mb-10 flex items-center gap-10">
-        <div class="w-[100px]">
+      <div class="mb-10 flex items-center gap-10 sm:mb-[25px] sm:gap-5">
+        <div class="min-w-[100px] sm:min-w-[75px]">
           <img
             src="img/img-3.png"
             alt=""
-            class="h-[100px] rounded-full object-cover"
+            class="h-[100px] rounded-full object-cover sm:h-[75px]"
           />
         </div>
-        <p class="text-[20px] font-bold leading-[150%] text-[#272727]">
-          Котова Анастасия
-        </p>
-        <button class="btn">Изменить данные</button>
+        <div
+          class="flex items-center gap-10 sm:flex-col sm:items-start sm:gap-5"
+        >
+          <p
+            class="text-[20px] font-bold leading-[150%] text-[#272727] sm:text-[16px] sm:leading-[120%]"
+          >
+            Котова Анастасия
+          </p>
+          <button class="btn sm:hidden">Изменить данные</button>
+          <button
+            class="hidden text-[12px] font-medium text-[rgba(0,0,0,0.4)] sm:block"
+          >
+            Изменить
+          </button>
+        </div>
       </div>
-      <div class="grid grid-cols-[260px_1fr] gap-[100px]">
-        <ul class="flex flex-col gap-[30px]">
-          <li class="flex items-center justify-between">
+      <div
+        class="grid grid-cols-[260px_1fr] gap-[100px] xl:gap-10 lg:grid-cols-[1fr_1fr] md:grid-cols-[1fr] md:gap-[30px] sm:gap-[25px]"
+      >
+        <ul class="flex flex-col gap-[30px] sm:gap-[25px]">
+          <li
+            class="flex items-center justify-between gap-5 sm:flex-col sm:items-start sm:gap-[10px]"
+          >
             <span
-              class="text-[16px] font-medium leading-[120%] text-[rgba(0,0,0,0.4)]"
+              class="text-[16px] font-medium leading-[120%] text-[rgba(0,0,0,0.4)] sm:text-[10px]"
               >Пол</span
             >
             <span
-              class="rounded-[500px] bg-[#757b6f] px-3 py-2 text-[16px] font-medium leading-[120%] text-white"
+              class="rounded-[500px] bg-[#757b6f] px-3 py-2 text-[16px] font-medium leading-[120%] text-white sm:bg-transparent sm:p-0 sm:text-[12px] sm:text-[#272727]"
               >Женский</span
             >
           </li>
-          <li class="flex items-center justify-between">
+          <li
+            class="flex items-center justify-between gap-5 sm:flex-col sm:items-start sm:gap-[10px]"
+          >
             <span
-              class="text-[16px] font-medium leading-[120%] text-[rgba(0,0,0,0.4)]"
+              class="text-[16px] font-medium leading-[120%] text-[rgba(0,0,0,0.4)] sm:text-[10px]"
               >Дата рождения</span
-            ><span class="text-[16px] font-medium leading-[120%] text-[#272727]"
+            ><span
+              class="text-[16px] font-medium leading-[120%] text-[#272727] sm:text-[12px]"
               >18.09.1990</span
             >
           </li>
         </ul>
-        <ul class="flex flex-col gap-[30px]">
-          <li class="flex items-center justify-between">
+        <ul class="flex flex-col gap-[30px] sm:gap-[25px]">
+          <li
+            class="flex items-center justify-between gap-5 sm:flex-col sm:items-start sm:gap-[10px]"
+          >
             <span
-              class="text-[16px] font-medium leading-[120%] text-[rgba(0,0,0,0.4)]"
+              class="text-[16px] font-medium leading-[120%] text-[rgba(0,0,0,0.4)] sm:text-[10px]"
               >Город</span
             >
-            <span class="text-[16px] font-medium leading-[120%] text-[#272727]"
+            <span
+              class="text-[16px] font-medium leading-[120%] text-[#272727] sm:text-[12px]"
               >Москва</span
             >
           </li>
-          <li class="flex items-center justify-between">
+          <li
+            class="flex items-center justify-between gap-5 sm:flex-col sm:items-start sm:gap-[10px]"
+          >
             <span
-              class="text-[16px] font-medium leading-[120%] text-[rgba(0,0,0,0.4)]"
+              class="whitespace-nowrap text-[16px] font-medium leading-[120%] text-[rgba(0,0,0,0.4)] sm:text-[10px]"
               >E-mail</span
-            ><span class="text-[16px] font-medium leading-[120%] text-[#272727]"
+            ><span
+              class="text-[16px] font-medium leading-[120%] text-[#272727] sm:text-[12px]"
               >Frowajecreipru-7402@yopmail.com</span
             >
           </li>
-          <li class="flex items-center justify-between">
+          <li
+            class="flex items-center justify-between gap-5 sm:flex-col sm:items-start sm:gap-[10px]"
+          >
             <span
-              class="text-[16px] font-medium leading-[120%] text-[rgba(0,0,0,0.4)]"
+              class="text-[16px] font-medium leading-[120%] text-[rgba(0,0,0,0.4)] sm:text-[10px]"
               >Телефон</span
-            ><span class="text-[16px] font-medium leading-[120%] text-[#272727]"
+            ><span
+              class="text-[16px] font-medium leading-[120%] text-[#272727] sm:text-[12px]"
               >+7 987 415 67 87</span
             >
           </li>
         </ul>
       </div>
     </div>
-    <div>
+    <div class="max-w-[400px]">
       <div class="overflow-hidden rounded-[15px]">
         <div
-          class="flex flex-col gap-[35px] bg-[#757b6f] bg-[url('/img/bg-11.png')] bg-center bg-no-repeat p-5"
+          class="flex flex-col gap-[35px] bg-[#757b6f] bg-[url('/img/bg-11.png')] bg-center bg-no-repeat p-5 sm:gap-[26px] sm:bg-[url('/img/bg-13.svg')]"
         >
-          <span class="icon-9 text-[22px] text-white"></span>
-          <ul class="flex flex-col gap-5">
+          <span class="icon-9 text-[22px] text-white sm:text-[14px]"></span>
+          <ul class="flex flex-col gap-5 sm:gap-[15px]">
             <li class="flex items-end gap-[5px]">
               <span
-                class="text-[14px] font-medium leading-[120%] text-[rgba(255,255,255,0.4)]"
+                class="text-[14px] font-medium leading-[120%] text-[rgba(255,255,255,0.4)] sm:text-[10px]"
                 >Кешбек:</span
-              ><span class="text-[16px] font-medium leading-[120%] text-white"
+              ><span
+                class="text-[16px] font-medium leading-[120%] text-white sm:text-[12px]"
                 >3%</span
               >
             </li>
             <li class="flex items-end gap-[5px]">
               <span
-                class="text-[14px] font-medium leading-[120%] text-[rgba(255,255,255,0.4)]"
+                class="text-[14px] font-medium leading-[120%] text-[rgba(255,255,255,0.4)] sm:text-[10px]"
                 >Ваши баллы:</span
-              ><span class="text-[16px] font-medium leading-[120%] text-white"
+              ><span
+                class="text-[16px] font-medium leading-[120%] text-white sm:text-[12px]"
                 >665</span
               >
             </li>
           </ul>
-          <span class="text-[16px] font-medium leading-[120%] text-white"
+          <span
+            class="text-[16px] font-medium leading-[120%] text-white sm:text-[12px]"
             >История покупок</span
           >
         </div>
-        <div class="flex items-center justify-center gap-5 bg-[#676b63] p-5">
-          <span class="icon-22 text-[30px] text-white"></span>
-          <p class="gap-5 text-[14px] font-medium leading-[120%] text-white">
+        <div
+          class="flex items-center justify-center gap-5 bg-[#676b63] p-5 sm:gap-[15px]"
+        >
+          <span class="icon-22 text-[30px] text-white sm:text-[20px]"></span>
+          <p
+            class="gap-5 text-[14px] font-medium leading-[120%] text-white sm:text-[10px] sm:[&>br]:hidden"
+          >
             Зайдите с мобильной версии <br />
             чтобы отсканировать QR-код
           </p>
@@ -148,7 +182,7 @@
       </div>
     </div>
   </div>
-  <div class="mt-[60px]">
+  <div class="mt-[60px] sm:hidden">
     <h2
       class="mb-[60px] text-left text-[55px] font-medium leading-[150%] text-[#272727]"
     >
