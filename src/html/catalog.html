@@ -1,12 +1,13 @@
-<div class="_container pb-[60px] pt-[170px]">
+<div class="_container pb-[60px] pt-[170px] sm:pb-10">
   @@include('./tabs.html')
   <div
-    class="mt-10 grid grid-cols-3 gap-10 [&>div:nth-child(2)]:col-span-2 [&>div:nth-child(6)]:col-span-2"
+    class="mt-10 grid grid-cols-3 gap-10 lg:grid-cols-2 sm:mt-5 sm:grid-cols-1 [&>div:nth-child(2)]:col-span-2 lg:[&>div:nth-child(2)]:col-span-1 [&>div:nth-child(6)]:col-span-2 lg:[&>div:nth-child(6)]:col-span-1"
   >
     @@for (var i = 0; i < 10; i++) { @@include('./product.html') }
   </div>
-  <p class="mt-[64px] flex justify-center gap-[10px]">
-    <span class="text-[16px] font-medium leading-[120%] text-[#272727]"
+  <p class="mt-[64px] flex items-center justify-center gap-[10px] sm:mt-[30px]">
+    <span
+      class="text-[16px] font-medium leading-[120%] text-[#272727] sm:text-[12px]"
       >Загружаем товар</span
     ><svg width="20" height="20">
       <path
