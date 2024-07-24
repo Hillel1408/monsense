@@ -132,7 +132,7 @@
         <li class="text-[20px] font-bold leading-[150%] text-[#272727]">+3</li>
       </ul>
       <div
-        class="whitespace-nowrap rounded-[500px] bg-[#757b6f] px-[10px] py-[7px] text-[10px] font-medium leading-[120%] text-white"
+        class="hidden whitespace-nowrap rounded-[500px] bg-[#757b6f] px-[10px] py-[7px] text-[10px] font-medium leading-[120%] text-white sm:block"
       >
         3 цвета
       </div>
@@ -169,7 +169,7 @@
         <li class="text-[20px] font-bold leading-[150%] text-[#272727]">+3</li>
       </ul>
       <div
-        class="whitespace-nowrap rounded-[500px] bg-[#757b6f] px-[10px] py-[7px] text-[10px] font-medium leading-[120%] text-white"
+        class="hidden whitespace-nowrap rounded-[500px] bg-[#757b6f] px-[10px] py-[7px] text-[10px] font-medium leading-[120%] text-white sm:block"
       >
         3 цвета
       </div>
@@ -206,7 +206,7 @@
         <li class="text-[20px] font-bold leading-[150%] text-[#272727]">+3</li>
       </ul>
       <div
-        class="whitespace-nowrap rounded-[500px] bg-[#757b6f] px-[10px] py-[7px] text-[10px] font-medium leading-[120%] text-white"
+        class="hidden whitespace-nowrap rounded-[500px] bg-[#757b6f] px-[10px] py-[7px] text-[10px] font-medium leading-[120%] text-white sm:block"
       >
         3 цвета
       </div>
@@ -264,24 +264,26 @@
   <div
     class="bg-[url('https://hillel1408.github.io/monsense/img/bg-2.png')] bg-cover bg-center"
   >
-    <div class="_container py-11 text-center">
-      <p class="mb-[15px] text-[20px] font-bold leading-[150%] text-white">
+    <div class="_container py-11 text-center sm:py-[27px]">
+      <p
+        class="mb-[15px] text-[20px] font-bold leading-[150%] text-white sm:mb-[10px] sm:text-[16px] sm:leading-[100%]"
+      >
         Подпишитесь на рассылку
       </p>
       <p
-        class="mb-10 text-[16px] font-medium leading-[120%] text-[rgba(255,255,255,0.6)]"
+        class="mb-10 text-[16px] font-medium leading-[120%] text-[rgba(255,255,255,0.6)] sm:mb-5 sm:text-[12px]"
       >
         Получайте все новости первым
       </p>
       <form action="#">
-        <div class="relative mx-auto w-[620px]">
+        <div class="relative mx-auto w-[620px] md:w-full">
           <input
             type="email"
             placeholder="Введитe E-mail"
-            class="w-full border border-b-[2px] border-l-0 border-r-0 border-t-0 border-[rgba(255,255,255,0.2)] bg-transparent p-5 pl-0 pr-[100px] placeholder:text-[16px] placeholder:font-medium placeholder:leading-[120%] placeholder:text-white"
+            class="w-full border border-b-[2px] border-l-0 border-r-0 border-t-0 border-[rgba(255,255,255,0.2)] bg-transparent p-5 pl-0 pr-[100px] placeholder:text-[16px] placeholder:font-medium placeholder:leading-[120%] placeholder:text-white sm:py-[12px] sm:placeholder:text-[12px]"
           />
           <button
-            class="absolute right-0 top-1/2 -translate-y-1/2 text-[16px] font-medium leading-[120%] text-[rgba(255,255,255,0.6)]"
+            class="absolute right-0 top-1/2 -translate-y-1/2 text-[16px] font-medium leading-[120%] text-[rgba(255,255,255,0.6)] sm:text-[12px]"
           >
             Отправить
           </button>
@@ -290,29 +292,42 @@
     </div>
   </div>
 </div>
-<div class="_container py-[100px]">
-  <h2 class="title mb-10">Новости</h2>
-  <div class="grid h-[640px] grid-cols-2 overflow-hidden rounded-2xl">
+<div class="_container py-[100px] sm:py-10">
+  <div class="mb-10 sm:mb-5 sm:flex sm:items-center sm:justify-between">
+    <h2 class="title">Новости</h2>
+    <button class="btn hidden sm:block">Смотреть все</button>
+  </div>
+  <div
+    class="grid h-[640px] grid-cols-2 overflow-hidden rounded-2xl xl:h-[540px] lg:h-[440px] md:h-[340px] sm:-mx-5 sm:flex sm:h-[245px] sm:gap-[25px] sm:overflow-auto sm:rounded-none"
+  >
     <div
-      class="flex flex-col justify-end bg-[url('https://hillel1408.github.io/monsense/img/bg-3.jpg')] bg-cover bg-center p-10"
+      class="flex flex-col justify-end bg-[url('https://hillel1408.github.io/monsense/img/bg-3.jpg')] bg-cover bg-center p-10 sm:min-w-[245px] sm:p-5"
     >
       <div class="max-w-[360px]">
-        <h3 class="text-[20px] font-bold leading-[150%] text-white">
+        <h3
+          class="mb-3 text-[20px] font-bold leading-[150%] text-white sm:text-[24px] sm:leading-[100%]"
+        >
           Новые игрушки
         </h3>
-        <p class="text-[16px] font-medium leading-[120%] text-white">
+        <p
+          class="text-[16px] font-medium leading-[120%] text-white sm:text-[12px]"
+        >
           Наши недорогие и простые в использовании игрушки для нее и для него
         </p>
       </div>
     </div>
     <div
-      class="flex flex-col justify-end bg-[url('https://hillel1408.github.io/monsense/img/bg-4.jpg')] bg-cover bg-center p-10"
+      class="flex flex-col justify-end bg-[url('https://hillel1408.github.io/monsense/img/bg-4.jpg')] bg-cover bg-center p-10 sm:min-w-[245px] sm:p-5"
     >
       <div class="max-w-[360px]">
-        <h3 class="text-[20px] font-bold leading-[150%] text-white">
+        <h3
+          class="mb-3 text-[20px] font-bold leading-[150%] text-white sm:text-[24px] sm:leading-[100%]"
+        >
           Новые игрушки
         </h3>
-        <p class="text-[16px] font-medium leading-[120%] text-white">
+        <p
+          class="text-[16px] font-medium leading-[120%] text-white sm:text-[12px]"
+        >
           Наши недорогие и простые в использовании игрушки для нее и для него
         </p>
       </div>
@@ -321,11 +336,16 @@
 </div>
 
     </main>
-    <footer class="bg-[#757b6f] py-[60px]">
-  <div class="_container flex justify-between gap-[100px]">
+    <footer class="bg-[#757b6f] py-[60px] sm:py-[30px]">
+  <div
+    class="_container flex justify-between gap-[100px] xl:gap-5 md:grid md:grid-cols-2 md:gap-[50px] sm:grid-cols-1"
+  >
     <div class="flex flex-col gap-[45px]">
-      <a href="#" class="icon-9 text-[38px] text-white"></a>
-      <div>
+      <a
+        href="#"
+        class="icon-9 text-[38px] text-white lg:text-[18px] sm:text-center"
+      ></a>
+      <div class="sm:hidden">
         <p class="text-[20px] font-bold leading-[150%] text-white">
           Подпишитесь на рассылку
         </p>
@@ -333,7 +353,7 @@
           Получайте все новости первым
         </p>
       </div>
-      <form action="#">
+      <form action="#" class="sm:hidden">
         <div class="relative">
           <input
             type="email"
@@ -349,9 +369,11 @@
       </form>
     </div>
     <div>
-      <h3 class="mb-[30px] text-[36px] font-medium text-white">Навигация</h3>
+      <h3 class="mb-[30px] text-[36px] font-medium text-white sm:hidden">
+        Навигация
+      </h3>
       <ul
-        class="flex flex-col gap-5 text-[16px] font-medium leading-[120%] text-white"
+        class="flex flex-col gap-5 text-[16px] font-medium leading-[120%] text-white sm:gap-[15px] sm:text-center sm:text-[12px]"
       >
         <li><a href="#">Глвная</a></li>
         <li><a href="#">Каталог</a></li>
@@ -360,7 +382,7 @@
         <li><a href="#">Программа лояльности</a></li>
       </ul>
     </div>
-    <div>
+    <div class="lg:hidden">
       <h3 class="mb-[30px] text-[36px] font-medium text-white">Где купить</h3>
       <ul
         class="flex flex-col gap-5 text-[16px] font-medium leading-[120%] text-white"
@@ -370,16 +392,20 @@
       </ul>
     </div>
     <div>
-      <h3 class="mb-[30px] text-[36px] font-medium text-white">Контакты</h3>
-      <p class="mb-[15px] text-[16px] font-medium leading-[120%] text-white">
+      <h3 class="mb-[30px] text-[36px] font-medium text-white sm:hidden">
+        Контакты
+      </h3>
+      <p
+        class="mb-[15px] text-[16px] font-medium leading-[120%] text-white sm:text-center sm:text-[12px]"
+      >
         Красная пл., Москва, 109012
       </p>
       <a
-        class="text-[16px] font-medium leading-[120%] text-white"
+        class="text-[16px] font-medium leading-[120%] text-white sm:block sm:text-center sm:text-[12px]"
         href="tel:+7(777)777-77-77"
         >+7 (777) 777-77-77</a
       >
-      <ul class="mt-[30px] flex gap-[15px]">
+      <ul class="mt-[30px] flex gap-[15px] sm:justify-center">
         <li><a href="#" class="icon-youtube text-[35px] text-white"></a></li>
         <li><a href="#" class="icon-instagram text-[35px] text-white"></a></li>
         <li><a href="#" class="icon-telegram text-[35px] text-white"></a></li>
@@ -402,9 +428,9 @@
       </ul>
     </div>
   </div>
-  <div class="_container mt-[288px]">
+  <div class="_container mt-[288px] xl:mt-[208px] md:mt-[108px] sm:mt-10">
     <ul
-      class="flex gap-[100px] text-[20px] font-bold leading-[150%] text-white"
+      class="flex gap-[100px] text-[20px] font-bold leading-[150%] text-white md:gap-10 sm:justify-center sm:gap-5 sm:text-[10px]"
     >
       <li>
         <a href="#">Стать партнером</a>
