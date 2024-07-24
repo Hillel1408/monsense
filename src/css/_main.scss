@@ -8,5 +8,5 @@
   @apply rounded-[500px] border-[2px] border-[#757b6f] px-[30px] py-[15px] text-[16px] font-medium leading-[120%] text-[#757b6f] sm:px-[15px] sm:py-3 sm:text-[12px];
 }
 .secondary-btn {
-  @apply rounded-[500px] bg-[#757b6f] px-[30px] py-[15px] text-[16px] font-medium leading-[120%] text-white;
+  @apply rounded-[500px] border-[2px] border-[#757b6f] bg-[#757b6f] px-[30px] py-[15px] text-[16px] font-medium leading-[120%] text-white sm:px-[15px] sm:py-3 sm:text-[12px];
 }
