@@ -1,12 +1,23 @@
 <div class="overflow-hidden">
-  <div class="grid grid-cols-2 pb-10">
+  <div class="grid grid-cols-2 pb-10 lg:grid-cols-1">
     <div class="relative">
-      <img
-        src="https://hillel1408.github.io/monsense/img/img-2.jpg"
-        alt=""
-        class="h-full w-full object-cover"
-      />
-      <button class="absolute left-10 top-[110px]">
+      <div class="swiper-card relative h-full overflow-hidden">
+        <div class="swiper-wrapper h-full">
+          @@for (var i = 0; i < 5; i++) {
+          <div class="swiper-slide h-full">
+            <img
+              src="https://hillel1408.github.io/monsense/img/img-2.jpg"
+              alt=""
+              class="h-full w-full object-cover lg:h-[1000px] md:h-[700px] sm:h-[320px]"
+            />
+          </div>
+          }
+        </div>
+        <div
+          class="swiper-card-pagination absolute !bottom-5 z-10 flex justify-center gap-[10px] [&>span.swiper-pagination-bullet-active]:w-[24px] [&>span.swiper-pagination-bullet-active]:rounded-[400px] [&>span.swiper-pagination-bullet-active]:!opacity-100 [&>span]:!mx-0 [&>span]:bg-[#272727] [&>span]:!opacity-50"
+        ></div>
+      </div>
+      <button class="absolute left-10 top-[110px] sm:hidden">
         <svg width="50" height="50" fill="none">
           <rect
             width="50"
@@ -26,26 +37,33 @@
       </button>
     </div>
     <div class="pr-[calc(100vw/2-660px)]">
-      <div class="flex flex-col gap-10 pl-[70px] pr-5 pt-[130px]">
+      <div
+        class="flex flex-col gap-10 pl-[70px] pr-5 pt-[130px] lg:pl-5 lg:pt-[30px] sm:pt-5"
+      >
         <div>
           <p
-            class="mb-[15px] text-[20px] font-bold leading-[150%] text-[#272727]"
+            class="mb-[15px] text-[20px] font-bold leading-[150%] text-[#272727] sm:mb-[10px] sm:text-[16px] sm:leading-[120%]"
           >
             ERICA Pleasure
           </p>
-          <p class="text-[16px] font-medium leading-[120%] text-[#272727]">
+          <p
+            class="text-[16px] font-medium leading-[120%] text-[#272727] sm:text-[12px]"
+          >
             Вибратор с управлением через приложение
           </p>
         </div>
-        <span class="text-[31px] font-bold leading-[150%] text-[#272727]"
+        <span
+          class="text-[31px] font-bold leading-[150%] text-[#272727] sm:hidden"
           >2500₽</span
         >
         <div class="flex justify-between">
-          <div class="flex flex-col gap-[15px]">
-            <span class="text-[20px] font-bold leading-[150%] text-[#272727]"
+          <div class="flex flex-col gap-[15px] sm:gap-[10px]">
+            <span
+              class="text-[20px] font-bold leading-[150%] text-[#272727] sm:text-[16px] sm:leading-[120%]"
               >Цвет:</span
             >
-            <span class="text-[16px] font-medium leading-[120%] text-[#272727]"
+            <span
+              class="text-[16px] font-medium leading-[120%] text-[#272727] sm:text-[12px]"
               >Темно-зеленый</span
             >
           </div>
@@ -62,13 +80,15 @@
             </li>
           </ul>
         </div>
-        <p class="text-[16px] font-medium leading-[120%] text-[#272727]">
+        <p
+          class="text-[16px] font-medium leading-[120%] text-[#272727] sm:text-[12px]"
+        >
           Наша ультра-увлажняющая смазка, изготовленная на основе органического
           алоэ, обеспечивает идеальную осмоляльность тела. Имеет фиксирующую
           насадку на 8 и 4 жидких унции. Безопасна для использования с девайсами
           и презервативами из латекса или полиизопрена
         </p>
-        <div class="flex gap-[15px]">
+        <div class="flex gap-[15px] sm:hidden">
           <button class="secondary-btn">Добавить в корзину</button>
           <div
             class="flex items-center gap-5 rounded-[500px] border-[2px] border-[#757b6f] px-[30px] py-[15px] text-[16px] font-medium text-[#757b6f]"
@@ -80,7 +100,7 @@
         </div>
         <div>
           <p
-            class="mb-[25px] text-[20px] font-bold leading-[150%] text-[#272727]"
+            class="mb-[25px] text-[20px] font-bold leading-[150%] text-[#272727] sm:text-[16px]"
           >
             Преимущества
           </p>
@@ -88,42 +108,42 @@
             <li class="flex items-center gap-[15px]">
               <span class="icon-11 text-[30px] text-[#757b6f]"></span
               ><span
-                class="text-[16px] font-medium leading-[120%] text-[#272727]"
+                class="text-[16px] font-medium leading-[120%] text-[#272727] sm:text-[12px]"
                 >Функция нагрева</span
               >
             </li>
             <li class="flex items-center gap-[15px]">
               <span class="icon-17 text-[30px] text-[#757b6f]"></span
               ><span
-                class="text-[16px] font-medium leading-[120%] text-[#272727]"
+                class="text-[16px] font-medium leading-[120%] text-[#272727] sm:text-[12px]"
                 >Безопасный силикон</span
               >
             </li>
             <li class="flex items-center gap-[15px]">
               <span class="icon-13 text-[30px] text-[#757b6f]"></span
               ><span
-                class="text-[16px] font-medium leading-[120%] text-[#272727]"
+                class="text-[16px] font-medium leading-[120%] text-[#272727] sm:text-[12px]"
                 >5 скоростных режимов</span
               >
             </li>
             <li class="flex items-center gap-[15px]">
               <span class="icon-14 text-[30px] text-[#757b6f]"></span
               ><span
-                class="text-[16px] font-medium leading-[120%] text-[#272727]"
+                class="text-[16px] font-medium leading-[120%] text-[#272727] sm:text-[12px]"
                 >90 минут для игры</span
               >
             </li>
             <li class="flex items-center gap-[15px]">
               <span class="icon-15 text-[30px] text-[#757b6f]"></span
               ><span
-                class="text-[16px] font-medium leading-[120%] text-[#272727]"
+                class="text-[16px] font-medium leading-[120%] text-[#272727] sm:text-[12px]"
                 >Зарядка DC - USB</span
               >
             </li>
             <li class="flex items-center gap-[15px]">
               <span class="icon-16 text-[30px] text-[#757b6f]"></span
               ><span
-                class="text-[16px] font-medium leading-[120%] text-[#272727]"
+                class="text-[16px] font-medium leading-[120%] text-[#272727] sm:text-[12px]"
                 >Просто очистить</span
               >
             </li>
@@ -131,7 +151,7 @@
         </div>
         <div>
           <p
-            class="mb-[25px] text-[20px] font-bold leading-[150%] text-[#272727]"
+            class="mb-[25px] text-[20px] font-bold leading-[150%] text-[#272727] sm:hidden"
           >
             Подробнее
           </p>
@@ -147,7 +167,7 @@
               </div>
               <div class="pt-5">
                 <p
-                  class="text-[16px] font-medium leading-[120%] text-[rgba(0,0,0,0.4)]"
+                  class="text-[16px] font-medium leading-[120%] text-[rgba(0,0,0,0.4)] sm:text-[12px]"
                 >
                   Более подробное описание товара другой стороны постоянное
                   информационно-пропагандистское обеспечение нашей деятельности.
@@ -160,9 +180,9 @@
       </div>
     </div>
   </div>
-  <div class="_container pb-[100px]">
+  <div class="_container pb-[100px] sm:pb-10">
     <div>
-      <h2 class="title mb-10">Рекомендуем</h2>
+      <h2 class="title mb-10 sm:mb-5">Рекомендуем</h2>
       <div class="swiper-goods">
         <div class="swiper-wrapper">
           @@for (var i = 0; i < 10; i++) {
