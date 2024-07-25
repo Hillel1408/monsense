@@ -17,41 +17,46 @@
     </style>
   </head>
   <body class="min-w-[350px]">
-    <header class="header absolute left-0 right-0 z-10 py-[22px]">
-  <div class="_container flex justify-between">
-    <a href="#" class="icon-9 text-[26px] text-white"></a>
-    <ul class="flex items-center gap-10 text-white">
+    <header
+  class="header absolute left-0 right-0 z-10 min-w-[320px] py-[22px] sm:py-[17px]"
+>
+  <div class="_container flex items-center justify-between">
+    <img src="/img/icon-1.svg" alt="" class="hidden sm:block" />
+    <a href="#" class="icon-9 text-[26px] text-white sm:text-[16px]"></a>
+    <ul class="flex items-center gap-10 text-white md:hidden">
       <li><a href="#">Каталог</a></li>
       <li><a href="#">Блог</a></li>
       <li><a href="#">Где купить</a></li>
     </ul>
     <ul class="flex items-center gap-[30px]">
-      <li class="icon-6 text-[26px] text-white"></li>
-      <li class="icon--12 text-[26px] text-white"></li>
-      <li class="icon-8 text-[26px] text-white"></li>
-      <li class="icon-7 text-[26px] text-white"></li>
+      <li class="icon-6 text-[26px] text-white sm:text-[22px]"></li>
+      <li class="icon--12 text-[26px] text-white sm:hidden"></li>
+      <li class="icon-8 text-[26px] text-white sm:text-[22px]"></li>
+      <li class="icon-7 text-[26px] text-white sm:hidden"></li>
     </ul>
   </div>
 </header>
 
-    <main><div class="_container relative pb-[200px] pt-[170px]">
+    <main><div
+  class="_container relative pb-[200px] pt-[170px] sm:pb-[100px] sm:pt-[75px]"
+>
   <h1
-    class="mb-[100px] text-center text-[55px] font-medium leading-[150%] text-[#272727]"
+    class="mb-[100px] text-center text-[55px] font-medium leading-[150%] text-[#272727] sm:mb-[60px] sm:mt-[70px] sm:text-[24px] sm:leading-[100%]"
   >
     Вход
   </h1>
   <form action="#" class="mx-auto max-w-[700px]">
-    <div class="flex flex-col gap-10">
+    <div class="flex flex-col gap-5">
       <input
         type="email"
         placeholder="E-mail или телефон"
-        class="placeholder:[rgba(0,0,0,0.4)] w-full border border-b-[2px] border-l-0 border-r-0 border-t-0 border-[rgba(0,0,0,0.2)] bg-transparent p-5 pl-0 placeholder:text-[16px] placeholder:font-medium placeholder:leading-[120%]"
+        class="placeholder:[rgba(0,0,0,0.4)] w-full border border-b-[2px] border-l-0 border-r-0 border-t-0 border-[rgba(0,0,0,0.2)] bg-transparent p-5 pl-0 placeholder:text-[16px] placeholder:font-medium placeholder:leading-[120%] sm:py-[14px] sm:placeholder:text-[12px] sm:placeholder:leading-[100%]"
       />
       <div class="relative">
         <input
           type="password"
           placeholder="Пароль"
-          class="placeholder:[rgba(0,0,0,0.4)] w-full border border-b-[2px] border-l-0 border-r-0 border-t-0 border-[rgba(0,0,0,0.2)] bg-transparent p-5 pl-0 placeholder:text-[16px] placeholder:font-medium placeholder:leading-[120%]"
+          class="placeholder:[rgba(0,0,0,0.4)] w-full border border-b-[2px] border-l-0 border-r-0 border-t-0 border-[rgba(0,0,0,0.2)] bg-transparent p-5 pl-0 placeholder:text-[16px] placeholder:font-medium placeholder:leading-[120%] sm:py-[14px] sm:placeholder:text-[12px] sm:placeholder:leading-[100%]"
         />
         <button
           class="icon-20 absolute right-0 top-1/2 -translate-y-1/2 text-[24px] text-[#272727]"
@@ -59,17 +64,19 @@
       </div>
       <a
         href="#"
-        class="text-center text-[16px] font-medium leading-[120%] text-[rgba(0,0,0,0.4)] underline"
+        class="text-center text-[16px] font-medium leading-[120%] text-[rgba(0,0,0,0.4)] underline sm:text-[12px]"
         >Забыли пароль?</a
       >
     </div>
-    <div class="mt-[60px] grid grid-cols-[1fr_1fr] gap-[30px]">
+    <div
+      class="mt-[60px] grid grid-cols-[1fr_1fr] gap-[30px] sm:mx-auto sm:mt-10 sm:max-w-[200px] sm:grid-cols-[1fr] sm:gap-[15px]"
+    >
       <button class="secondary-btn">Войти</button>
       <button class="btn">Создать аккаунт</button>
     </div>
   </form>
-  <button class="absolute left-5 top-[110px]">
-    <svg width="50" height="50" fill="none">
+  <button class="absolute left-5 top-[110px] sm:left-[10px] sm:top-[65px]">
+    <svg width="50" height="50" fill="none" class="sm:scale-[0.6]">
       <rect
         width="50"
         height="50"
@@ -88,11 +95,16 @@
   </button>
 </div>
 </main>
-    <footer class="bg-[#757b6f] py-[60px]">
-  <div class="_container flex justify-between gap-[100px]">
+    <footer class="bg-[#757b6f] py-[60px] sm:py-[30px]">
+  <div
+    class="_container flex justify-between gap-[100px] xl:gap-5 md:grid md:grid-cols-2 md:gap-[50px] sm:grid-cols-1"
+  >
     <div class="flex flex-col gap-[45px]">
-      <a href="#" class="icon-9 text-[38px] text-white"></a>
-      <div>
+      <a
+        href="#"
+        class="icon-9 text-[38px] text-white lg:text-[18px] sm:text-center"
+      ></a>
+      <div class="sm:hidden">
         <p class="text-[20px] font-bold leading-[150%] text-white">
           Подпишитесь на рассылку
         </p>
@@ -100,7 +112,7 @@
           Получайте все новости первым
         </p>
       </div>
-      <form action="#">
+      <form action="#" class="sm:hidden">
         <div class="relative">
           <input
             type="email"
@@ -116,9 +128,11 @@
       </form>
     </div>
     <div>
-      <h3 class="mb-[30px] text-[36px] font-medium text-white">Навигация</h3>
+      <h3 class="mb-[30px] text-[36px] font-medium text-white sm:hidden">
+        Навигация
+      </h3>
       <ul
-        class="flex flex-col gap-5 text-[16px] font-medium leading-[120%] text-white"
+        class="flex flex-col gap-5 text-[16px] font-medium leading-[120%] text-white sm:gap-[15px] sm:text-center sm:text-[12px]"
       >
         <li><a href="#">Глвная</a></li>
         <li><a href="#">Каталог</a></li>
@@ -127,7 +141,7 @@
         <li><a href="#">Программа лояльности</a></li>
       </ul>
     </div>
-    <div>
+    <div class="lg:hidden">
       <h3 class="mb-[30px] text-[36px] font-medium text-white">Где купить</h3>
       <ul
         class="flex flex-col gap-5 text-[16px] font-medium leading-[120%] text-white"
@@ -137,16 +151,20 @@
       </ul>
     </div>
     <div>
-      <h3 class="mb-[30px] text-[36px] font-medium text-white">Контакты</h3>
-      <p class="mb-[15px] text-[16px] font-medium leading-[120%] text-white">
+      <h3 class="mb-[30px] text-[36px] font-medium text-white sm:hidden">
+        Контакты
+      </h3>
+      <p
+        class="mb-[15px] text-[16px] font-medium leading-[120%] text-white sm:text-center sm:text-[12px]"
+      >
         Красная пл., Москва, 109012
       </p>
       <a
-        class="text-[16px] font-medium leading-[120%] text-white"
+        class="text-[16px] font-medium leading-[120%] text-white sm:block sm:text-center sm:text-[12px]"
         href="tel:+7(777)777-77-77"
         >+7 (777) 777-77-77</a
       >
-      <ul class="mt-[30px] flex gap-[15px]">
+      <ul class="mt-[30px] flex gap-[15px] sm:justify-center">
         <li><a href="#" class="icon-youtube text-[35px] text-white"></a></li>
         <li><a href="#" class="icon-instagram text-[35px] text-white"></a></li>
         <li><a href="#" class="icon-telegram text-[35px] text-white"></a></li>
@@ -169,9 +187,9 @@
       </ul>
     </div>
   </div>
-  <div class="_container mt-[288px]">
+  <div class="_container mt-[288px] xl:mt-[208px] md:mt-[108px] sm:mt-10">
     <ul
-      class="flex gap-[100px] text-[20px] font-bold leading-[150%] text-white"
+      class="flex gap-[100px] text-[20px] font-bold leading-[150%] text-white md:gap-10 sm:justify-center sm:gap-5 sm:text-[10px]"
     >
       <li>
         <a href="#">Стать партнером</a>

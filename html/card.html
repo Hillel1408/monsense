@@ -1,12 +1,55 @@
 <div class="overflow-hidden">
-  <div class="grid grid-cols-2 pb-10">
+  <div class="grid grid-cols-2 pb-10 lg:grid-cols-1">
     <div class="relative">
-      <img
-        src="https://hillel1408.github.io/monsense/img/img-2.jpg"
-        alt=""
-        class="h-full w-full object-cover"
-      />
-      <button class="absolute left-10 top-[110px]">
+      <div class="swiper-card relative h-full overflow-hidden">
+        <div class="swiper-wrapper h-full">
+          
+          <div class="swiper-slide h-full">
+            <img
+              src="https://hillel1408.github.io/monsense/img/img-2.jpg"
+              alt=""
+              class="h-full w-full object-cover lg:h-[1000px] md:h-[700px] sm:h-[320px]"
+            />
+          </div>
+          
+          <div class="swiper-slide h-full">
+            <img
+              src="https://hillel1408.github.io/monsense/img/img-2.jpg"
+              alt=""
+              class="h-full w-full object-cover lg:h-[1000px] md:h-[700px] sm:h-[320px]"
+            />
+          </div>
+          
+          <div class="swiper-slide h-full">
+            <img
+              src="https://hillel1408.github.io/monsense/img/img-2.jpg"
+              alt=""
+              class="h-full w-full object-cover lg:h-[1000px] md:h-[700px] sm:h-[320px]"
+            />
+          </div>
+          
+          <div class="swiper-slide h-full">
+            <img
+              src="https://hillel1408.github.io/monsense/img/img-2.jpg"
+              alt=""
+              class="h-full w-full object-cover lg:h-[1000px] md:h-[700px] sm:h-[320px]"
+            />
+          </div>
+          
+          <div class="swiper-slide h-full">
+            <img
+              src="https://hillel1408.github.io/monsense/img/img-2.jpg"
+              alt=""
+              class="h-full w-full object-cover lg:h-[1000px] md:h-[700px] sm:h-[320px]"
+            />
+          </div>
+          
+        </div>
+        <div
+          class="swiper-card-pagination absolute !bottom-5 z-10 flex justify-center gap-[10px] [&>span.swiper-pagination-bullet-active]:w-[24px] [&>span.swiper-pagination-bullet-active]:rounded-[400px] [&>span.swiper-pagination-bullet-active]:!opacity-100 [&>span]:!mx-0 [&>span]:bg-[#272727] [&>span]:!opacity-50"
+        ></div>
+      </div>
+      <button class="absolute left-10 top-[110px] sm:hidden">
         <svg width="50" height="50" fill="none">
           <rect
             width="50"
@@ -26,26 +69,33 @@
       </button>
     </div>
     <div class="pr-[calc(100vw/2-660px)]">
-      <div class="flex flex-col gap-10 pl-[70px] pr-5 pt-[130px]">
+      <div
+        class="flex flex-col gap-10 pl-[70px] pr-5 pt-[130px] lg:pl-5 lg:pt-[30px] sm:pt-5"
+      >
         <div>
           <p
-            class="mb-[15px] text-[20px] font-bold leading-[150%] text-[#272727]"
+            class="mb-[15px] text-[20px] font-bold leading-[150%] text-[#272727] sm:mb-[10px] sm:text-[16px] sm:leading-[120%]"
           >
             ERICA Pleasure
           </p>
-          <p class="text-[16px] font-medium leading-[120%] text-[#272727]">
+          <p
+            class="text-[16px] font-medium leading-[120%] text-[#272727] sm:text-[12px]"
+          >
             Вибратор с управлением через приложение
           </p>
         </div>
-        <span class="text-[31px] font-bold leading-[150%] text-[#272727]"
+        <span
+          class="text-[31px] font-bold leading-[150%] text-[#272727] sm:hidden"
           >2500₽</span
         >
         <div class="flex justify-between">
-          <div class="flex flex-col gap-[15px]">
-            <span class="text-[20px] font-bold leading-[150%] text-[#272727]"
+          <div class="flex flex-col gap-[15px] sm:gap-[10px]">
+            <span
+              class="text-[20px] font-bold leading-[150%] text-[#272727] sm:text-[16px] sm:leading-[120%]"
               >Цвет:</span
             >
-            <span class="text-[16px] font-medium leading-[120%] text-[#272727]"
+            <span
+              class="text-[16px] font-medium leading-[120%] text-[#272727] sm:text-[12px]"
               >Темно-зеленый</span
             >
           </div>
@@ -62,13 +112,15 @@
             </li>
           </ul>
         </div>
-        <p class="text-[16px] font-medium leading-[120%] text-[#272727]">
+        <p
+          class="text-[16px] font-medium leading-[120%] text-[#272727] sm:text-[12px]"
+        >
           Наша ультра-увлажняющая смазка, изготовленная на основе органического
           алоэ, обеспечивает идеальную осмоляльность тела. Имеет фиксирующую
           насадку на 8 и 4 жидких унции. Безопасна для использования с девайсами
           и презервативами из латекса или полиизопрена
         </p>
-        <div class="flex gap-[15px]">
+        <div class="flex gap-[15px] sm:hidden">
           <button class="secondary-btn">Добавить в корзину</button>
           <div
             class="flex items-center gap-5 rounded-[500px] border-[2px] border-[#757b6f] px-[30px] py-[15px] text-[16px] font-medium text-[#757b6f]"
@@ -80,7 +132,7 @@
         </div>
         <div>
           <p
-            class="mb-[25px] text-[20px] font-bold leading-[150%] text-[#272727]"
+            class="mb-[25px] text-[20px] font-bold leading-[150%] text-[#272727] sm:text-[16px]"
           >
             Преимущества
           </p>
@@ -88,42 +140,42 @@
             <li class="flex items-center gap-[15px]">
               <span class="icon-11 text-[30px] text-[#757b6f]"></span
               ><span
-                class="text-[16px] font-medium leading-[120%] text-[#272727]"
+                class="text-[16px] font-medium leading-[120%] text-[#272727] sm:text-[12px]"
                 >Функция нагрева</span
               >
             </li>
             <li class="flex items-center gap-[15px]">
               <span class="icon-17 text-[30px] text-[#757b6f]"></span
               ><span
-                class="text-[16px] font-medium leading-[120%] text-[#272727]"
+                class="text-[16px] font-medium leading-[120%] text-[#272727] sm:text-[12px]"
                 >Безопасный силикон</span
               >
             </li>
             <li class="flex items-center gap-[15px]">
               <span class="icon-13 text-[30px] text-[#757b6f]"></span
               ><span
-                class="text-[16px] font-medium leading-[120%] text-[#272727]"
+                class="text-[16px] font-medium leading-[120%] text-[#272727] sm:text-[12px]"
                 >5 скоростных режимов</span
               >
             </li>
             <li class="flex items-center gap-[15px]">
               <span class="icon-14 text-[30px] text-[#757b6f]"></span
               ><span
-                class="text-[16px] font-medium leading-[120%] text-[#272727]"
+                class="text-[16px] font-medium leading-[120%] text-[#272727] sm:text-[12px]"
                 >90 минут для игры</span
               >
             </li>
             <li class="flex items-center gap-[15px]">
               <span class="icon-15 text-[30px] text-[#757b6f]"></span
               ><span
-                class="text-[16px] font-medium leading-[120%] text-[#272727]"
+                class="text-[16px] font-medium leading-[120%] text-[#272727] sm:text-[12px]"
                 >Зарядка DC - USB</span
               >
             </li>
             <li class="flex items-center gap-[15px]">
               <span class="icon-16 text-[30px] text-[#757b6f]"></span
               ><span
-                class="text-[16px] font-medium leading-[120%] text-[#272727]"
+                class="text-[16px] font-medium leading-[120%] text-[#272727] sm:text-[12px]"
                 >Просто очистить</span
               >
             </li>
@@ -131,7 +183,7 @@
         </div>
         <div>
           <p
-            class="mb-[25px] text-[20px] font-bold leading-[150%] text-[#272727]"
+            class="mb-[25px] text-[20px] font-bold leading-[150%] text-[#272727] sm:hidden"
           >
             Подробнее
           </p>
@@ -147,7 +199,7 @@
               </div>
               <div class="pt-5">
                 <p
-                  class="text-[16px] font-medium leading-[120%] text-[rgba(0,0,0,0.4)]"
+                  class="text-[16px] font-medium leading-[120%] text-[rgba(0,0,0,0.4)] sm:text-[12px]"
                 >
                   Более подробное описание товара другой стороны постоянное
                   информационно-пропагандистское обеспечение нашей деятельности.
@@ -165,7 +217,7 @@
               </div>
               <div class="pt-5">
                 <p
-                  class="text-[16px] font-medium leading-[120%] text-[rgba(0,0,0,0.4)]"
+                  class="text-[16px] font-medium leading-[120%] text-[rgba(0,0,0,0.4)] sm:text-[12px]"
                 >
                   Более подробное описание товара другой стороны постоянное
                   информационно-пропагандистское обеспечение нашей деятельности.
@@ -183,7 +235,7 @@
               </div>
               <div class="pt-5">
                 <p
-                  class="text-[16px] font-medium leading-[120%] text-[rgba(0,0,0,0.4)]"
+                  class="text-[16px] font-medium leading-[120%] text-[rgba(0,0,0,0.4)] sm:text-[12px]"
                 >
                   Более подробное описание товара другой стороны постоянное
                   информационно-пропагандистское обеспечение нашей деятельности.
@@ -196,9 +248,9 @@
       </div>
     </div>
   </div>
-  <div class="_container pb-[100px]">
+  <div class="_container pb-[100px] sm:pb-10">
     <div>
-      <h2 class="title mb-10">Рекомендуем</h2>
+      <h2 class="title mb-10 sm:mb-5">Рекомендуем</h2>
       <div class="swiper-goods">
         <div class="swiper-wrapper">
           
@@ -206,29 +258,38 @@
   <img
     src="https://hillel1408.github.io/monsense/img/img-1.jpg"
     alt=""
-    class="mb-[18px] h-[400px] w-full rounded-[15px] object-cover"
+    class="mb-[18px] h-[400px] w-full rounded-[15px] object-cover xl:h-[355px] lg:h-[305px] md:h-[260px] sm:mb-[15px] sm:h-[225px]"
   />
-  <div class="mb-[25px] flex justify-between gap-4">
+  <div class="mb-[25px] flex flex-wrap justify-between gap-4 sm:mb-0">
     <div>
-      <p class="mb-[15px] text-[20px] font-bold leading-[150%] text-[#272727]">
+      <p
+        class="mb-[15px] text-[20px] font-bold leading-[150%] text-[#272727] sm:mb-[10px] sm:text-[16px] sm:leading-[120%]"
+      >
         ERICA Pleasure
       </p>
       <p
-        class="max-w-[210px] text-[16px] font-medium leading-[120%] text-[rgba(39,39,39,0.6)]"
+        class="max-w-[210px] text-[16px] font-medium leading-[120%] text-[rgba(39,39,39,0.6)] sm:text-[10px]"
       >
         Вибратор с управлением через приложение
       </p>
     </div>
     <div>
-      <ul class="flex items-center gap-[14px]">
+      <ul class="flex items-center gap-[14px] sm:hidden">
         <li class="h-[28px] w-[28px] rounded-full bg-[#757B6F]"></li>
         <li class="h-[28px] w-[28px] rounded-full bg-[#E2B19A]"></li>
         <li class="h-[28px] w-[28px] rounded-full bg-[#FEECEC]"></li>
         <li class="text-[20px] font-bold leading-[150%] text-[#272727]">+3</li>
       </ul>
+      <div
+        class="hidden whitespace-nowrap rounded-[500px] bg-[#757b6f] px-[10px] py-[7px] text-[10px] font-medium leading-[120%] text-white sm:block"
+      >
+        3 цвета
+      </div>
     </div>
   </div>
-  <p class="text-[25px] font-bold leading-[150%] text-[#272727]">2 500₽</p>
+  <p class="text-[25px] font-bold leading-[150%] text-[#272727] sm:hidden">
+    2 500₽
+  </p>
 </div>
 </div>
           
@@ -236,29 +297,38 @@
   <img
     src="https://hillel1408.github.io/monsense/img/img-1.jpg"
     alt=""
-    class="mb-[18px] h-[400px] w-full rounded-[15px] object-cover"
+    class="mb-[18px] h-[400px] w-full rounded-[15px] object-cover xl:h-[355px] lg:h-[305px] md:h-[260px] sm:mb-[15px] sm:h-[225px]"
   />
-  <div class="mb-[25px] flex justify-between gap-4">
+  <div class="mb-[25px] flex flex-wrap justify-between gap-4 sm:mb-0">
     <div>
-      <p class="mb-[15px] text-[20px] font-bold leading-[150%] text-[#272727]">
+      <p
+        class="mb-[15px] text-[20px] font-bold leading-[150%] text-[#272727] sm:mb-[10px] sm:text-[16px] sm:leading-[120%]"
+      >
         ERICA Pleasure
       </p>
       <p
-        class="max-w-[210px] text-[16px] font-medium leading-[120%] text-[rgba(39,39,39,0.6)]"
+        class="max-w-[210px] text-[16px] font-medium leading-[120%] text-[rgba(39,39,39,0.6)] sm:text-[10px]"
       >
         Вибратор с управлением через приложение
       </p>
     </div>
     <div>
-      <ul class="flex items-center gap-[14px]">
+      <ul class="flex items-center gap-[14px] sm:hidden">
         <li class="h-[28px] w-[28px] rounded-full bg-[#757B6F]"></li>
         <li class="h-[28px] w-[28px] rounded-full bg-[#E2B19A]"></li>
         <li class="h-[28px] w-[28px] rounded-full bg-[#FEECEC]"></li>
         <li class="text-[20px] font-bold leading-[150%] text-[#272727]">+3</li>
       </ul>
+      <div
+        class="hidden whitespace-nowrap rounded-[500px] bg-[#757b6f] px-[10px] py-[7px] text-[10px] font-medium leading-[120%] text-white sm:block"
+      >
+        3 цвета
+      </div>
     </div>
   </div>
-  <p class="text-[25px] font-bold leading-[150%] text-[#272727]">2 500₽</p>
+  <p class="text-[25px] font-bold leading-[150%] text-[#272727] sm:hidden">
+    2 500₽
+  </p>
 </div>
 </div>
           
@@ -266,29 +336,38 @@
   <img
     src="https://hillel1408.github.io/monsense/img/img-1.jpg"
     alt=""
-    class="mb-[18px] h-[400px] w-full rounded-[15px] object-cover"
+    class="mb-[18px] h-[400px] w-full rounded-[15px] object-cover xl:h-[355px] lg:h-[305px] md:h-[260px] sm:mb-[15px] sm:h-[225px]"
   />
-  <div class="mb-[25px] flex justify-between gap-4">
+  <div class="mb-[25px] flex flex-wrap justify-between gap-4 sm:mb-0">
     <div>
-      <p class="mb-[15px] text-[20px] font-bold leading-[150%] text-[#272727]">
+      <p
+        class="mb-[15px] text-[20px] font-bold leading-[150%] text-[#272727] sm:mb-[10px] sm:text-[16px] sm:leading-[120%]"
+      >
         ERICA Pleasure
       </p>
       <p
-        class="max-w-[210px] text-[16px] font-medium leading-[120%] text-[rgba(39,39,39,0.6)]"
+        class="max-w-[210px] text-[16px] font-medium leading-[120%] text-[rgba(39,39,39,0.6)] sm:text-[10px]"
       >
         Вибратор с управлением через приложение
       </p>
     </div>
     <div>
-      <ul class="flex items-center gap-[14px]">
+      <ul class="flex items-center gap-[14px] sm:hidden">
         <li class="h-[28px] w-[28px] rounded-full bg-[#757B6F]"></li>
         <li class="h-[28px] w-[28px] rounded-full bg-[#E2B19A]"></li>
         <li class="h-[28px] w-[28px] rounded-full bg-[#FEECEC]"></li>
         <li class="text-[20px] font-bold leading-[150%] text-[#272727]">+3</li>
       </ul>
+      <div
+        class="hidden whitespace-nowrap rounded-[500px] bg-[#757b6f] px-[10px] py-[7px] text-[10px] font-medium leading-[120%] text-white sm:block"
+      >
+        3 цвета
+      </div>
     </div>
   </div>
-  <p class="text-[25px] font-bold leading-[150%] text-[#272727]">2 500₽</p>
+  <p class="text-[25px] font-bold leading-[150%] text-[#272727] sm:hidden">
+    2 500₽
+  </p>
 </div>
 </div>
           
@@ -296,29 +375,38 @@
   <img
     src="https://hillel1408.github.io/monsense/img/img-1.jpg"
     alt=""
-    class="mb-[18px] h-[400px] w-full rounded-[15px] object-cover"
+    class="mb-[18px] h-[400px] w-full rounded-[15px] object-cover xl:h-[355px] lg:h-[305px] md:h-[260px] sm:mb-[15px] sm:h-[225px]"
   />
-  <div class="mb-[25px] flex justify-between gap-4">
+  <div class="mb-[25px] flex flex-wrap justify-between gap-4 sm:mb-0">
     <div>
-      <p class="mb-[15px] text-[20px] font-bold leading-[150%] text-[#272727]">
+      <p
+        class="mb-[15px] text-[20px] font-bold leading-[150%] text-[#272727] sm:mb-[10px] sm:text-[16px] sm:leading-[120%]"
+      >
         ERICA Pleasure
       </p>
       <p
-        class="max-w-[210px] text-[16px] font-medium leading-[120%] text-[rgba(39,39,39,0.6)]"
+        class="max-w-[210px] text-[16px] font-medium leading-[120%] text-[rgba(39,39,39,0.6)] sm:text-[10px]"
       >
         Вибратор с управлением через приложение
       </p>
     </div>
     <div>
-      <ul class="flex items-center gap-[14px]">
+      <ul class="flex items-center gap-[14px] sm:hidden">
         <li class="h-[28px] w-[28px] rounded-full bg-[#757B6F]"></li>
         <li class="h-[28px] w-[28px] rounded-full bg-[#E2B19A]"></li>
         <li class="h-[28px] w-[28px] rounded-full bg-[#FEECEC]"></li>
         <li class="text-[20px] font-bold leading-[150%] text-[#272727]">+3</li>
       </ul>
+      <div
+        class="hidden whitespace-nowrap rounded-[500px] bg-[#757b6f] px-[10px] py-[7px] text-[10px] font-medium leading-[120%] text-white sm:block"
+      >
+        3 цвета
+      </div>
     </div>
   </div>
-  <p class="text-[25px] font-bold leading-[150%] text-[#272727]">2 500₽</p>
+  <p class="text-[25px] font-bold leading-[150%] text-[#272727] sm:hidden">
+    2 500₽
+  </p>
 </div>
 </div>
           
@@ -326,29 +414,38 @@
   <img
     src="https://hillel1408.github.io/monsense/img/img-1.jpg"
     alt=""
-    class="mb-[18px] h-[400px] w-full rounded-[15px] object-cover"
+    class="mb-[18px] h-[400px] w-full rounded-[15px] object-cover xl:h-[355px] lg:h-[305px] md:h-[260px] sm:mb-[15px] sm:h-[225px]"
   />
-  <div class="mb-[25px] flex justify-between gap-4">
+  <div class="mb-[25px] flex flex-wrap justify-between gap-4 sm:mb-0">
     <div>
-      <p class="mb-[15px] text-[20px] font-bold leading-[150%] text-[#272727]">
+      <p
+        class="mb-[15px] text-[20px] font-bold leading-[150%] text-[#272727] sm:mb-[10px] sm:text-[16px] sm:leading-[120%]"
+      >
         ERICA Pleasure
       </p>
       <p
-        class="max-w-[210px] text-[16px] font-medium leading-[120%] text-[rgba(39,39,39,0.6)]"
+        class="max-w-[210px] text-[16px] font-medium leading-[120%] text-[rgba(39,39,39,0.6)] sm:text-[10px]"
       >
         Вибратор с управлением через приложение
       </p>
     </div>
     <div>
-      <ul class="flex items-center gap-[14px]">
+      <ul class="flex items-center gap-[14px] sm:hidden">
         <li class="h-[28px] w-[28px] rounded-full bg-[#757B6F]"></li>
         <li class="h-[28px] w-[28px] rounded-full bg-[#E2B19A]"></li>
         <li class="h-[28px] w-[28px] rounded-full bg-[#FEECEC]"></li>
         <li class="text-[20px] font-bold leading-[150%] text-[#272727]">+3</li>
       </ul>
+      <div
+        class="hidden whitespace-nowrap rounded-[500px] bg-[#757b6f] px-[10px] py-[7px] text-[10px] font-medium leading-[120%] text-white sm:block"
+      >
+        3 цвета
+      </div>
     </div>
   </div>
-  <p class="text-[25px] font-bold leading-[150%] text-[#272727]">2 500₽</p>
+  <p class="text-[25px] font-bold leading-[150%] text-[#272727] sm:hidden">
+    2 500₽
+  </p>
 </div>
 </div>
           
@@ -356,29 +453,38 @@
   <img
     src="https://hillel1408.github.io/monsense/img/img-1.jpg"
     alt=""
-    class="mb-[18px] h-[400px] w-full rounded-[15px] object-cover"
+    class="mb-[18px] h-[400px] w-full rounded-[15px] object-cover xl:h-[355px] lg:h-[305px] md:h-[260px] sm:mb-[15px] sm:h-[225px]"
   />
-  <div class="mb-[25px] flex justify-between gap-4">
+  <div class="mb-[25px] flex flex-wrap justify-between gap-4 sm:mb-0">
     <div>
-      <p class="mb-[15px] text-[20px] font-bold leading-[150%] text-[#272727]">
+      <p
+        class="mb-[15px] text-[20px] font-bold leading-[150%] text-[#272727] sm:mb-[10px] sm:text-[16px] sm:leading-[120%]"
+      >
         ERICA Pleasure
       </p>
       <p
-        class="max-w-[210px] text-[16px] font-medium leading-[120%] text-[rgba(39,39,39,0.6)]"
+        class="max-w-[210px] text-[16px] font-medium leading-[120%] text-[rgba(39,39,39,0.6)] sm:text-[10px]"
       >
         Вибратор с управлением через приложение
       </p>
     </div>
     <div>
-      <ul class="flex items-center gap-[14px]">
+      <ul class="flex items-center gap-[14px] sm:hidden">
         <li class="h-[28px] w-[28px] rounded-full bg-[#757B6F]"></li>
         <li class="h-[28px] w-[28px] rounded-full bg-[#E2B19A]"></li>
         <li class="h-[28px] w-[28px] rounded-full bg-[#FEECEC]"></li>
         <li class="text-[20px] font-bold leading-[150%] text-[#272727]">+3</li>
       </ul>
+      <div
+        class="hidden whitespace-nowrap rounded-[500px] bg-[#757b6f] px-[10px] py-[7px] text-[10px] font-medium leading-[120%] text-white sm:block"
+      >
+        3 цвета
+      </div>
     </div>
   </div>
-  <p class="text-[25px] font-bold leading-[150%] text-[#272727]">2 500₽</p>
+  <p class="text-[25px] font-bold leading-[150%] text-[#272727] sm:hidden">
+    2 500₽
+  </p>
 </div>
 </div>
           
@@ -386,29 +492,38 @@
   <img
     src="https://hillel1408.github.io/monsense/img/img-1.jpg"
     alt=""
-    class="mb-[18px] h-[400px] w-full rounded-[15px] object-cover"
+    class="mb-[18px] h-[400px] w-full rounded-[15px] object-cover xl:h-[355px] lg:h-[305px] md:h-[260px] sm:mb-[15px] sm:h-[225px]"
   />
-  <div class="mb-[25px] flex justify-between gap-4">
+  <div class="mb-[25px] flex flex-wrap justify-between gap-4 sm:mb-0">
     <div>
-      <p class="mb-[15px] text-[20px] font-bold leading-[150%] text-[#272727]">
+      <p
+        class="mb-[15px] text-[20px] font-bold leading-[150%] text-[#272727] sm:mb-[10px] sm:text-[16px] sm:leading-[120%]"
+      >
         ERICA Pleasure
       </p>
       <p
-        class="max-w-[210px] text-[16px] font-medium leading-[120%] text-[rgba(39,39,39,0.6)]"
+        class="max-w-[210px] text-[16px] font-medium leading-[120%] text-[rgba(39,39,39,0.6)] sm:text-[10px]"
       >
         Вибратор с управлением через приложение
       </p>
     </div>
     <div>
-      <ul class="flex items-center gap-[14px]">
+      <ul class="flex items-center gap-[14px] sm:hidden">
         <li class="h-[28px] w-[28px] rounded-full bg-[#757B6F]"></li>
         <li class="h-[28px] w-[28px] rounded-full bg-[#E2B19A]"></li>
         <li class="h-[28px] w-[28px] rounded-full bg-[#FEECEC]"></li>
         <li class="text-[20px] font-bold leading-[150%] text-[#272727]">+3</li>
       </ul>
+      <div
+        class="hidden whitespace-nowrap rounded-[500px] bg-[#757b6f] px-[10px] py-[7px] text-[10px] font-medium leading-[120%] text-white sm:block"
+      >
+        3 цвета
+      </div>
     </div>
   </div>
-  <p class="text-[25px] font-bold leading-[150%] text-[#272727]">2 500₽</p>
+  <p class="text-[25px] font-bold leading-[150%] text-[#272727] sm:hidden">
+    2 500₽
+  </p>
 </div>
 </div>
           
@@ -416,29 +531,38 @@
   <img
     src="https://hillel1408.github.io/monsense/img/img-1.jpg"
     alt=""
-    class="mb-[18px] h-[400px] w-full rounded-[15px] object-cover"
+    class="mb-[18px] h-[400px] w-full rounded-[15px] object-cover xl:h-[355px] lg:h-[305px] md:h-[260px] sm:mb-[15px] sm:h-[225px]"
   />
-  <div class="mb-[25px] flex justify-between gap-4">
+  <div class="mb-[25px] flex flex-wrap justify-between gap-4 sm:mb-0">
     <div>
-      <p class="mb-[15px] text-[20px] font-bold leading-[150%] text-[#272727]">
+      <p
+        class="mb-[15px] text-[20px] font-bold leading-[150%] text-[#272727] sm:mb-[10px] sm:text-[16px] sm:leading-[120%]"
+      >
         ERICA Pleasure
       </p>
       <p
-        class="max-w-[210px] text-[16px] font-medium leading-[120%] text-[rgba(39,39,39,0.6)]"
+        class="max-w-[210px] text-[16px] font-medium leading-[120%] text-[rgba(39,39,39,0.6)] sm:text-[10px]"
       >
         Вибратор с управлением через приложение
       </p>
     </div>
     <div>
-      <ul class="flex items-center gap-[14px]">
+      <ul class="flex items-center gap-[14px] sm:hidden">
         <li class="h-[28px] w-[28px] rounded-full bg-[#757B6F]"></li>
         <li class="h-[28px] w-[28px] rounded-full bg-[#E2B19A]"></li>
         <li class="h-[28px] w-[28px] rounded-full bg-[#FEECEC]"></li>
         <li class="text-[20px] font-bold leading-[150%] text-[#272727]">+3</li>
       </ul>
+      <div
+        class="hidden whitespace-nowrap rounded-[500px] bg-[#757b6f] px-[10px] py-[7px] text-[10px] font-medium leading-[120%] text-white sm:block"
+      >
+        3 цвета
+      </div>
     </div>
   </div>
-  <p class="text-[25px] font-bold leading-[150%] text-[#272727]">2 500₽</p>
+  <p class="text-[25px] font-bold leading-[150%] text-[#272727] sm:hidden">
+    2 500₽
+  </p>
 </div>
 </div>
           
@@ -446,29 +570,38 @@
   <img
     src="https://hillel1408.github.io/monsense/img/img-1.jpg"
     alt=""
-    class="mb-[18px] h-[400px] w-full rounded-[15px] object-cover"
+    class="mb-[18px] h-[400px] w-full rounded-[15px] object-cover xl:h-[355px] lg:h-[305px] md:h-[260px] sm:mb-[15px] sm:h-[225px]"
   />
-  <div class="mb-[25px] flex justify-between gap-4">
+  <div class="mb-[25px] flex flex-wrap justify-between gap-4 sm:mb-0">
     <div>
-      <p class="mb-[15px] text-[20px] font-bold leading-[150%] text-[#272727]">
+      <p
+        class="mb-[15px] text-[20px] font-bold leading-[150%] text-[#272727] sm:mb-[10px] sm:text-[16px] sm:leading-[120%]"
+      >
         ERICA Pleasure
       </p>
       <p
-        class="max-w-[210px] text-[16px] font-medium leading-[120%] text-[rgba(39,39,39,0.6)]"
+        class="max-w-[210px] text-[16px] font-medium leading-[120%] text-[rgba(39,39,39,0.6)] sm:text-[10px]"
       >
         Вибратор с управлением через приложение
       </p>
     </div>
     <div>
-      <ul class="flex items-center gap-[14px]">
+      <ul class="flex items-center gap-[14px] sm:hidden">
         <li class="h-[28px] w-[28px] rounded-full bg-[#757B6F]"></li>
         <li class="h-[28px] w-[28px] rounded-full bg-[#E2B19A]"></li>
         <li class="h-[28px] w-[28px] rounded-full bg-[#FEECEC]"></li>
         <li class="text-[20px] font-bold leading-[150%] text-[#272727]">+3</li>
       </ul>
+      <div
+        class="hidden whitespace-nowrap rounded-[500px] bg-[#757b6f] px-[10px] py-[7px] text-[10px] font-medium leading-[120%] text-white sm:block"
+      >
+        3 цвета
+      </div>
     </div>
   </div>
-  <p class="text-[25px] font-bold leading-[150%] text-[#272727]">2 500₽</p>
+  <p class="text-[25px] font-bold leading-[150%] text-[#272727] sm:hidden">
+    2 500₽
+  </p>
 </div>
 </div>
           
@@ -476,29 +609,38 @@
   <img
     src="https://hillel1408.github.io/monsense/img/img-1.jpg"
     alt=""
-    class="mb-[18px] h-[400px] w-full rounded-[15px] object-cover"
+    class="mb-[18px] h-[400px] w-full rounded-[15px] object-cover xl:h-[355px] lg:h-[305px] md:h-[260px] sm:mb-[15px] sm:h-[225px]"
   />
-  <div class="mb-[25px] flex justify-between gap-4">
+  <div class="mb-[25px] flex flex-wrap justify-between gap-4 sm:mb-0">
     <div>
-      <p class="mb-[15px] text-[20px] font-bold leading-[150%] text-[#272727]">
+      <p
+        class="mb-[15px] text-[20px] font-bold leading-[150%] text-[#272727] sm:mb-[10px] sm:text-[16px] sm:leading-[120%]"
+      >
         ERICA Pleasure
       </p>
       <p
-        class="max-w-[210px] text-[16px] font-medium leading-[120%] text-[rgba(39,39,39,0.6)]"
+        class="max-w-[210px] text-[16px] font-medium leading-[120%] text-[rgba(39,39,39,0.6)] sm:text-[10px]"
       >
         Вибратор с управлением через приложение
       </p>
     </div>
     <div>
-      <ul class="flex items-center gap-[14px]">
+      <ul class="flex items-center gap-[14px] sm:hidden">
         <li class="h-[28px] w-[28px] rounded-full bg-[#757B6F]"></li>
         <li class="h-[28px] w-[28px] rounded-full bg-[#E2B19A]"></li>
         <li class="h-[28px] w-[28px] rounded-full bg-[#FEECEC]"></li>
         <li class="text-[20px] font-bold leading-[150%] text-[#272727]">+3</li>
       </ul>
+      <div
+        class="hidden whitespace-nowrap rounded-[500px] bg-[#757b6f] px-[10px] py-[7px] text-[10px] font-medium leading-[120%] text-white sm:block"
+      >
+        3 цвета
+      </div>
     </div>
   </div>
-  <p class="text-[25px] font-bold leading-[150%] text-[#272727]">2 500₽</p>
+  <p class="text-[25px] font-bold leading-[150%] text-[#272727] sm:hidden">
+    2 500₽
+  </p>
 </div>
 </div>
           
@@ -507,16 +649,20 @@
     </div>
   </div>
 </div>
-<div class="mb-[100px]">
-  <div class="_container mb-10 flex items-center justify-between">
+<div class="mb-[100px] sm:mb-10">
+  <div class="_container mb-10 flex items-center justify-between sm:mb-5">
     <h2 class="title">Блог</h2>
     <button class="btn">Смотреть все</button>
   </div>
   <div
-    class="bg-[url('https://hillel1408.github.io/monsense/img/bg-5.png')] bg-cover bg-center"
+    class="bg-[url('https://hillel1408.github.io/monsense/img/bg-5.png')] bg-cover bg-center md:py-5"
   >
-    <div class="_container grid grid-cols-[1.5fr_1fr]">
-      <div class="flex flex-col justify-end pb-[38px] pr-[183px]">
+    <div
+      class="_container grid grid-cols-[1.5fr_1fr] lg:grid-cols-[1fr_360px] md:grid-cols-[1fr]"
+    >
+      <div
+        class="flex flex-col justify-end pb-[38px] pr-[183px] lg:pr-5 md:hidden"
+      >
         <div class="ml-auto max-w-[583px]">
           <p
             class="mb-[25px] text-[36px] font-medium leading-[110%] text-white"
@@ -530,46 +676,79 @@
           </p>
         </div>
       </div>
-      <div class="py filter-blur bg-[rgba(117,123,111,0.7)] px-[66px] py-5">
-        <div class="py-[40px]">
-          <div class="border-b-[2px] border-[rgba(255,255,255,0.2)] pb-[25px]">
+      <div
+        class="py filter-blur bg-[rgba(117,123,111,0.7)] px-[66px] py-5 lg:p-[15px] sm:h-[280px] md:[&>div:not(:first-child)]:hidden"
+      >
+        
+        <div class="py-[40px] md:py-0 sm:h-full">
+          <div
+            class="border-b-[2px] border-[rgba(255,255,255,0.2)] pb-[25px] sm:flex sm:h-full sm:flex-col sm:items-start sm:justify-between sm:border-0 sm:pb-0"
+          >
             <p
-              class="mb-[15px] text-[20px] font-bold leading-[150%] text-white"
+              class="mb-[15px] text-[20px] font-bold leading-[150%] text-white sm:mb-0 sm:text-[24px] sm:font-medium sm:leading-[100%]"
             >
               Современный язык тела
             </p>
-            <p class="left-[120%] text-[16px] font-medium text-white">
+            <p
+              class="text-[16px] font-medium leading-[120%] text-white sm:text-[12px]"
+            >
               С другой стороны постоянное информационно- пропагандистское
               обеспечение нашей деятельности
             </p>
+            <button
+              class="hidden rounded-[500px] bg-[white] px-[30px] py-[15px] text-[16px] font-medium leading-[120%] text-[#272727] sm:block sm:px-[15px] sm:py-3 sm:text-[12px]"
+            >
+              Читать статью
+            </button>
           </div>
         </div>
-        <div class="py-[40px]">
-          <div class="border-b-[2px] border-[rgba(255,255,255,0.2)] pb-[25px]">
+        
+        <div class="py-[40px] md:py-0 sm:h-full">
+          <div
+            class="border-b-[2px] border-[rgba(255,255,255,0.2)] pb-[25px] sm:flex sm:h-full sm:flex-col sm:items-start sm:justify-between sm:border-0 sm:pb-0"
+          >
             <p
-              class="mb-[15px] text-[20px] font-bold leading-[150%] text-white"
+              class="mb-[15px] text-[20px] font-bold leading-[150%] text-white sm:mb-0 sm:text-[24px] sm:font-medium sm:leading-[100%]"
             >
               Современный язык тела
             </p>
-            <p class="left-[120%] text-[16px] font-medium text-white">
+            <p
+              class="text-[16px] font-medium leading-[120%] text-white sm:text-[12px]"
+            >
               С другой стороны постоянное информационно- пропагандистское
               обеспечение нашей деятельности
             </p>
+            <button
+              class="hidden rounded-[500px] bg-[white] px-[30px] py-[15px] text-[16px] font-medium leading-[120%] text-[#272727] sm:block sm:px-[15px] sm:py-3 sm:text-[12px]"
+            >
+              Читать статью
+            </button>
           </div>
         </div>
-        <div class="py-[40px]">
-          <div class="border-b-[2px] border-[rgba(255,255,255,0.2)] pb-[25px]">
+        
+        <div class="py-[40px] md:py-0 sm:h-full">
+          <div
+            class="border-b-[2px] border-[rgba(255,255,255,0.2)] pb-[25px] sm:flex sm:h-full sm:flex-col sm:items-start sm:justify-between sm:border-0 sm:pb-0"
+          >
             <p
-              class="mb-[15px] text-[20px] font-bold leading-[150%] text-white"
+              class="mb-[15px] text-[20px] font-bold leading-[150%] text-white sm:mb-0 sm:text-[24px] sm:font-medium sm:leading-[100%]"
             >
               Современный язык тела
             </p>
-            <p class="left-[120%] text-[16px] font-medium text-white">
+            <p
+              class="text-[16px] font-medium leading-[120%] text-white sm:text-[12px]"
+            >
               С другой стороны постоянное информационно- пропагандистское
               обеспечение нашей деятельности
             </p>
+            <button
+              class="hidden rounded-[500px] bg-[white] px-[30px] py-[15px] text-[16px] font-medium leading-[120%] text-[#272727] sm:block sm:px-[15px] sm:py-3 sm:text-[12px]"
+            >
+              Читать статью
+            </button>
           </div>
         </div>
+        
       </div>
     </div>
   </div>
