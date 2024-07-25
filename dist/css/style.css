@@ -765,6 +765,9 @@ html {
 .gap-\[88px\]{
   gap: 88px;
 }
+.overflow-auto{
+  overflow: auto;
+}
 .overflow-hidden{
   overflow: hidden;
 }
@@ -1438,6 +1441,9 @@ body {
   .xl\:h-\[540px\]{
     height: 540px;
   }
+  .xl\:min-w-\[355px\]{
+    min-width: 355px;
+  }
   .xl\:gap-10{
     gap: 2.5rem;
   }
@@ -1446,6 +1452,9 @@ body {
   }
   .xl\:pr-\[70px\]{
     padding-right: 70px;
+  }
+  .xl\:pl-5{
+    padding-left: 1.25rem;
   }
   .xl\:text-\[80px\]{
     font-size: 80px;
@@ -1498,6 +1507,9 @@ body {
   .lg\:pt-\[30px\]{
     padding-top: 30px;
   }
+  .lg\:pt-5{
+    padding-top: 1.25rem;
+  }
   .lg\:text-\[18px\]{
     font-size: 18px;
   }
@@ -1507,6 +1519,15 @@ body {
 }
 
 @media (max-width: 767px){
+  .md\:bottom-5{
+    bottom: 1.25rem;
+  }
+  .md\:left-5{
+    left: 1.25rem;
+  }
+  .md\:right-5{
+    right: 1.25rem;
+  }
   .md\:mt-\[108px\]{
     margin-top: 108px;
   }
@@ -1524,6 +1545,12 @@ body {
   }
   .md\:h-\[700px\]{
     height: 700px;
+  }
+  .md\:h-full{
+    height: 100%;
+  }
+  .md\:h-\[100vh\]{
+    height: 100vh;
   }
   .md\:w-full{
     width: 100%;
@@ -1566,6 +1593,12 @@ body {
   }
   .md\:pl-5{
     padding-left: 1.25rem;
+  }
+  .md\:pb-0{
+    padding-bottom: 0px;
+  }
+  .md\:pl-0{
+    padding-left: 0px;
   }
 }
 
@@ -1799,6 +1832,12 @@ body {
   .sm\:pt-\[75px\]{
     padding-top: 75px;
   }
+  .sm\:pt-10{
+    padding-top: 2.5rem;
+  }
+  .sm\:pb-5{
+    padding-bottom: 1.25rem;
+  }
   .sm\:text-center{
     text-align: center;
   }
@@ -1876,6 +1915,34 @@ body {
 @media (max-width: 1023px){
   .lg\:\[\&\>div\:nth-child\(6\)\]\:col-span-1>div:nth-child(6){
     grid-column: span 1 / span 1;
+  }
+}
+
+.\[\&\>div\>img\]\:min-w-\[400px\]>div>img{
+  min-width: 400px;
+}
+
+@media (max-width: 1365px){
+  .\[\&\>div\>img\]\:xl\:min-w-\[355px\]>div>img{
+    min-width: 355px;
+  }
+}
+
+@media (max-width: 1023px){
+  .\[\&\>div\>img\]\:lg\:min-w-\[305px\]>div>img{
+    min-width: 305px;
+  }
+}
+
+@media (max-width: 767px){
+  .\[\&\>div\>img\]\:md\:min-w-\[260px\]>div>img{
+    min-width: 260px;
+  }
+}
+
+@media (max-width: 479px){
+  .\[\&\>div\>img\]\:sm\:min-w-\[225px\]>div>img{
+    min-width: 225px;
   }
 }
 
