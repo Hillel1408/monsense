@@ -17,11 +17,18 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
       const swiperGoods = new Swiper(".swiper-goods", {
-        slidesPerView: 3,
+        slidesPerView: 1,
         spaceBetween: 40,
         navigation: {},
         pagination: {},
-        breakpoints: {},
+        breakpoints: {
+          1024: {
+            slidesPerView: 3,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+        },
       });
     </script>
   </body>
