@@ -1,6 +1,8 @@
-<div class="_container relative pb-[100px] pt-[170px]">
-  <div class="mb-[54px] flex items-center justify-between">
-    <div class="relative flex w-[400px] justify-between">
+<div class="_container relative pb-[100px] pt-[170px] sm:pb-10 sm:pt-[76px]">
+  <div
+    class="mb-[54px] flex flex-wrap items-center justify-between gap-5 sm:mb-[10px]"
+  >
+    <div class="relative flex w-[400px] justify-between sm:hidden">
       <input
         type="text"
         placeholder="Введите название магазина"
@@ -10,77 +12,140 @@
         class="icon-6 absolute right-0 top-1/2 -translate-y-1/2 text-[22px] text-[rgba(0,0,0,0.4)]"
       ></button>
     </div>
-    <div class="flex items-center gap-[30px]">
+    <div class="flex items-center gap-[30px] sm:w-full sm:justify-between">
       <button
-        class="flex gap-[10px] text-[16px] font-medium leading-[120%] text-[#272727]"
+        class="flex items-center gap-[10px] text-[16px] font-medium leading-[120%] text-[#272727] sm:text-[12px]"
       >
-        <span class="icon-21 text-[19px] text-[#272727]"></span>Москва
+        <span class="icon-21 text-[19px] text-[#272727] sm:text-[14px]"></span
+        >Москва
       </button>
-      <button class="btn">Фильтр</button>
+      <button class="btn sm:hidden">Фильтр</button>
+      <button>
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+          <path
+            d="M8.21961 15.5834H2.75M19.25 6.41675H13.75M2.76 6.41675H2.75M19.26 15.5834H19.25M13.6892 12.8334C15.1996 12.8334 16.424 14.0646 16.424 15.5834C16.424 17.1022 15.1996 18.3334 13.6892 18.3334C12.1788 18.3334 10.9544 17.1022 10.9544 15.5834C10.9544 14.0646 12.1788 12.8334 13.6892 12.8334ZM8.21961 3.66675C9.73 3.66675 10.9544 4.89796 10.9544 6.41675C10.9544 7.93553 9.73001 9.16675 8.21961 9.16675C6.70922 9.16675 5.48481 7.93553 5.48481 6.41675C5.48481 4.89797 6.70922 3.66675 8.21961 3.66675Z"
+            stroke="#272727"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          />
+        </svg>
+      </button>
     </div>
   </div>
-  <div class="mb-[60px] grid grid-cols-[550px_1fr] gap-5">
-    <ul
-      class="scroll-bar flex max-h-[342px] flex-col gap-[25px] pr-[70px] text-[16px] font-medium leading-[120%] text-[#272727]"
+  <div
+    class="grid grid-cols-[550px_1fr] gap-x-5 gap-y-[60px] xl:grid-cols-[1fr_1fr] md:grid-cols-[1fr] sm:gap-5"
+  >
+    <div
+      class="sm:rounded-[10px] sm:bg-[rgba(0,0,0,0.05)] sm:px-[10px] sm:py-5"
     >
-      @@for (var i = 0; i < 35; i++) {
-      <li>Секс-шоп Лавка Фрейда</li>
-      }
-    </ul>
-    <img
-      src="/img/img-5.png"
-      alt=""
-      class="h-full w-full rounded-[15px] object-cover"
-    />
-  </div>
-  <div class="grid grid-cols-[510px_1fr] overflow-hidden rounded-[15px]">
-    <img src="img/img-4.png" alt="" class="h-[409px] w-full object-cover" />
-    <div class="bg-[#757b6f]">
-      <div
-        class="flex h-full flex-col gap-[40px] bg-[url('/img/bg-12.png')] bg-center object-cover p-11"
+      <ul
+        class="scroll-bar flex max-h-[342px] flex-col gap-[25px] pr-[70px] sm:pr-5"
       >
-        <p class="text-[36px] font-medium leading-[120%] text-white">
-          Точка любви
-        </p>
-        <div class="flex flex-col gap-[20px]">
-          <div
-            class="grid grid-cols-[180px_1fr] border-b-[2px] border-[rgba(255,255,255,0.2)] pb-[25px]"
+        @@for (var i = 0; i < 35; i++) {
+        <li class="flex justify-between">
+          <div class="sm:flex sm:flex-col sm:gap-2">
+            <span
+              class="text-[16px] font-medium leading-[120%] text-[#272727] sm:text-[12px]"
+              >Секс-шоп Лавка Фрейда</span
+            >
+            <span
+              class="hidden text-[10px] font-medium leading-[120%] text-[rgba(0,0,0,0.4)] sm:block"
+              >Центральная ул., д. 2 кв.112</span
+            >
+          </div>
+          <span
+            class="hidden text-[10px] font-medium leading-[120%] text-[rgba(0,0,0,0.4)] sm:block"
+            >330м</span
           >
-            <span class="text-[16px] font-medium leading-[120%] text-white"
-              >Адрес:</span
-            >
-            <p class="text-[16px] font-medium leading-[120%] text-white">
-              Улица Грузинский Вал, 3Ас2 <br />
-              улица Грузинский Вал, 3Ас2, Москва
-            </p>
-          </div>
-          <div class="grid grid-cols-[180px_1fr]">
-            <span class="text-[16px] font-medium leading-[120%] text-white"
-              >с 10:00 до 21:00</span
-            >
-          </div>
-          <div class="grid grid-cols-[180px_1fr]">
-            <span class="text-[16px] font-medium leading-[120%] text-white"
-              >Телефон:</span
-            >
-            <a
-              class="text-[16px] font-medium leading-[120%] text-white"
-              href="tel:+7(999)999-99-999"
-            >
-              +7 999 999 99 999
-            </a>
-          </div>
-        </div>
-        <button
-          class="w-[220px] rounded-[500px] border-[2px] border-white py-[15px] text-[16px] font-medium leading-[120%] text-white"
+        </li>
+        }
+      </ul>
+    </div>
+    <div class="-order-1 hidden gap-[10px] md:col-span-1 sm:flex">
+      <input
+        type="text"
+        placeholder="Название или адрес"
+        class="flex-auto rounded-[10px] bg-[rgba(0,0,0,0.05)] px-5 placeholder:text-[12px] placeholder:font-medium placeholder:text-[rgba(0,0,0,0.4)]"
+      />
+      <button class="secondary-btn !rounded-[10px]">Найти</button>
+    </div>
+    <img
+      src="https://hillel1408.github.io/monsense/img/img-5.png"
+      alt=""
+      class="-order-2 h-full w-full rounded-[15px] object-cover md:col-span-1 sm:h-[360px]"
+    />
+    <div
+      class="col-span-2 grid grid-cols-[510px_1fr] overflow-hidden rounded-[15px] lg:grid-cols-[330px_1fr] md:col-span-1 md:grid-cols-[1fr]"
+    >
+      <img
+        src="https://hillel1408.github.io/monsense/img/img-4.png"
+        alt=""
+        class="h-full w-full object-cover md:h-[300px] sm:h-[160px]"
+      />
+      <div class="bg-[#757b6f]">
+        <div
+          class="flex h-full flex-col gap-[40px] bg-[url('https://hillel1408.github.io/monsense/img/bg-12.png')] bg-center object-cover p-11 lg:p-5 sm:gap-[25px]"
         >
-          Построить маршрут
-        </button>
+          <p
+            class="text-[36px] font-medium leading-[120%] text-white sm:text-[16px]"
+          >
+            Точка любви
+          </p>
+          <div class="flex flex-col gap-[20px]">
+            <div
+              class="grid grid-cols-[180px_1fr] border-b-[2px] border-[rgba(255,255,255,0.2)] pb-[25px] sm:grid-cols-1 sm:gap-[10px] sm:border-0 sm:pb-0"
+            >
+              <span
+                class="text-[16px] font-medium leading-[120%] text-white sm:text-[10px] sm:text-[rgba(255,255,255,0.4)]"
+                >Адрес:</span
+              >
+              <p
+                class="text-[16px] font-medium leading-[120%] text-white sm:text-[12px]"
+              >
+                Улица Грузинский Вал, 3Ас2 <br />
+                улица Грузинский Вал, 3Ас2, Москва
+              </p>
+            </div>
+            <div
+              class="grid grid-cols-[180px_1fr] sm:grid-cols-1 sm:gap-[10px]"
+            >
+              <span
+                class="text-[16px] font-medium leading-[120%] text-white sm:text-[10px] sm:text-[rgba(255,255,255,0.4)]"
+                >Часы работы:</span
+              >
+              <span
+                class="text-[16px] font-medium leading-[120%] text-white sm:text-[12px]"
+                >с 10:00 до 21:00</span
+              >
+            </div>
+            <div
+              class="grid grid-cols-[180px_1fr] sm:grid-cols-1 sm:gap-[10px]"
+            >
+              <span
+                class="text-[16px] font-medium leading-[120%] text-white sm:text-[10px] sm:text-[rgba(255,255,255,0.4)]"
+                >Телефон:</span
+              >
+              <a
+                class="text-[16px] font-medium leading-[120%] text-white sm:text-[12px]"
+                href="tel:+7(999)999-99-999"
+              >
+                +7 999 999 99 999
+              </a>
+            </div>
+          </div>
+          <button
+            class="w-[220px] rounded-[500px] border-[2px] border-white py-[15px] text-[16px] font-medium leading-[120%] text-white sm:mx-auto sm:w-[150px] sm:py-[12px] sm:text-[12px]"
+          >
+            Построить маршрут
+          </button>
+        </div>
       </div>
     </div>
   </div>
-  <div class="mt-[60px] text-center">
-    <p class="#272727 mb-[25px] text-[22px] font-medium leading-[120%]">
+  <div class="mt-[60px] text-center sm:mt-10">
+    <p
+      class="#272727 mb-[25px] text-[22px] font-medium leading-[120%] sm:mb-5 sm:text-[16px]"
+    >
       Хотите добавить свой филиал?
     </p>
     <button class="btn">Добавить</button>
